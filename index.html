@@ -8,6 +8,29 @@
       content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik. Mitra terpercaya untuk sukseskan bisnis laundry Anda.">
    <meta name="keywords"
       content="peralatan laundry, mesin cuci, pengering, setrika uap, paket usaha laundry, grosir laundry">
+   <meta name="author" content="LaundryPro">
+   <meta name="robots" content="index, follow">
+   <link rel="canonical" href="https://www.laundrypro.co.id/">
+
+   <!-- Open Graph Meta Tags for Social Media -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="LaundryPro - Pusat Grosir Peralatan Laundry Terlengkap">
+   <meta property="og:description"
+      content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik. Mitra terpercaya untuk sukseskan bisnis laundry Anda.">
+   <meta property="og:url" content="https://www.laundrypro.co.id/">
+   <meta property="og:image" content="https://www.laundrypro.co.id/assets/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:site_name" content="LaundryPro">
+   <meta property="og:locale" content="id_ID">
+
+   <!-- Twitter Card Meta Tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="LaundryPro - Pusat Grosir Peralatan Laundry Terlengkap">
+   <meta name="twitter:description"
+      content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik.">
+   <meta name="twitter:image" content="https://www.laundrypro.co.id/assets/twitter-card.jpg">
+
    <title>Penyedia Jasa & Pusat Grosir Peralatan Laundry - Mitra Terpercaya</title>
 
    <!-- Google Fonts -->
@@ -27,17 +50,66 @@
    <!-- Custom CSS -->
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- Schema.org Structured Data -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "LocalBusiness",
+     "name": "LaundryPro",
+     "image": "https://www.laundrypro.co.id/assets/logo.png",
+     "@id": "https://www.laundrypro.co.id",
+     "url": "https://www.laundrypro.co.id",
+     "telephone": "+62-812-3456-7890",
+     "priceRange": "$$",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Jl. Industri No. 123",
+       "addressLocality": "Jakarta",
+       "postalCode": "12345",
+       "addressCountry": "ID"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": -6.2088,
+       "longitude": 106.8456
+     },
+     "openingHoursSpecification": {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": [
+         "Monday",
+         "Tuesday",
+         "Wednesday",
+         "Thursday",
+         "Friday",
+         "Saturday"
+       ],
+       "opens": "08:00",
+       "closes": "17:00"
+     },
+     "sameAs": [
+       "https://www.facebook.com/laundrypro",
+       "https://www.instagram.com/laundrypro",
+       "https://www.tiktok.com/@laundrypro"
+     ],
+     "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.8",
+       "reviewCount": "150"
+     }
+   }
+   </script>
 
 </head>
 
 <body>
    <!-- ===== NAVBAR ===== -->
-   <nav class="navbar navbar-expand-lg fixed-top">
+   <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
       <div class="container">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="#" aria-label="LaundryPro Home">
             <i class="bi bi-water"></i> LaundryPro
          </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
@@ -61,7 +133,7 @@
                   <a class="nav-link" href="#kontak">Hubungi Kami</a>
                </li>
                <li class="nav-item">
-                  <button class="btn btn-cta-nav" onclick="openWhatsApp()">
+                  <button class="btn btn-cta-nav" onclick="openWhatsApp()" aria-label="Konsultasi via WhatsApp">
                      <i class="bi bi-whatsapp"></i> Konsultasi WA
                   </button>
                </li>
@@ -74,7 +146,7 @@
    <section id="beranda" class="hero-section">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-lg-8" data-aos="fade-right">
+            <div class="col-lg-6" data-aos="fade-right">
                <div class="hero-content">
                   <h1>Mitra Terpercaya Sukseskan Bisnis Laundry Anda</h1>
                   <p>Pusat grosir peralatan laundry terlengkap dengan layanan purna jual terbaik.</p>
@@ -86,6 +158,12 @@
                         <i class="bi bi-tag-fill"></i> Lihat Promo Hari Ini
                      </button>
                   </div>
+               </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+               <div class="hero-image">
+                  <img src="https://placehold.co/500x500/0d6efd/ffffff?text=Laundry+Business"
+                     alt="Ilustrasi Bisnis Laundry Modern" loading="lazy" width="500" height="500">
                </div>
             </div>
          </div>
@@ -124,6 +202,32 @@
    <!-- ===== WHY US SECTION ===== -->
    <section id="tentang" class="why-us-section">
       <div class="container">
+         <!-- About Description -->
+         <div class="row align-items-center mb-5 pb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+               <div class="about-content">
+                  <h2 class="mb-4">Tentang LaundryPro</h2>
+                  <p class="lead">Kami adalah distributor dan penyedia solusi lengkap peralatan laundry terpercaya di
+                     Indonesia sejak 2015.</p>
+                  <p>Dengan pengalaman lebih dari 8 tahun, kami telah membantu ribuan pengusaha laundry memulai dan
+                     mengembangkan bisnis mereka. Kami menyediakan peralatan berkualitas tinggi, harga kompetitif, serta
+                     layanan purna jual yang responsif.</p>
+                  <p>Komitmen kami adalah menjadi mitra terpercaya yang tidak hanya menjual produk, tetapi juga
+                     memberikan konsultasi bisnis dan dukungan teknis untuk kesuksesan usaha laundry Anda.</p>
+                  <button class="btn btn-primary mt-3" onclick="openWhatsApp()">
+                     <i class="bi bi-whatsapp"></i> Hubungi Kami
+                  </button>
+               </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+               <div class="about-image">
+                  <img src="https://placehold.co/600x400/f8f9fa/0d6efd?text=Tentang+Kami" alt="Tentang LaundryPro"
+                     class="img-fluid rounded" loading="lazy" width="600" height="400">
+               </div>
+            </div>
+         </div>
+
+         <!-- Why Choose Us -->
          <div class="section-title" data-aos="fade-up">
             <h2>Mengapa Memilih Kami?</h2>
             <p>Keunggulan yang membuat kami menjadi pilihan terbaik untuk bisnis laundry Anda</p>
@@ -318,6 +422,250 @@
       </div>
    </section>
 
+   <!-- ===== BLOG/ARTIKEL SECTION ===== -->
+   <section id="blog" class="blog-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Blog & Tips Laundry</h2>
+            <p>Artikel dan tips terbaru seputar bisnis dan peralatan laundry</p>
+         </div>
+         <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+               <article class="article-card">
+                  <div class="article-image">
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Tips+Laundry"
+                        alt="Tips Memulai Bisnis Laundry">
+                  </div>
+                  <div class="article-content">
+                     <div class="article-meta">
+                        <i class="bi bi-calendar3"></i>
+                        <span>15 Des 2025</span>
+                     </div>
+                     <h3 class="article-title">Tips Memulai Bisnis Laundry dari Nol</h3>
+                     <p class="article-excerpt">Panduan lengkap untuk memulai bisnis laundry yang menguntungkan dengan
+                        modal minim.</p>
+                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+               <article class="article-card">
+                  <div class="article-image">
+                     <img src="https://placehold.co/400x250/4d94ff/ffffff?text=Perawatan+Mesin"
+                        alt="Perawatan Mesin Laundry">
+                  </div>
+                  <div class="article-content">
+                     <div class="article-meta">
+                        <i class="bi bi-calendar3"></i>
+                        <span>10 Des 2025</span>
+                     </div>
+                     <h3 class="article-title">Cara Merawat Mesin Cuci Agar Awet</h3>
+                     <p class="article-excerpt">Tips perawatan mesin cuci industrial agar tetap optimal dan tahan lama.
+                     </p>
+                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+               <article class="article-card">
+                  <div class="article-image">
+                     <img src="https://placehold.co/400x250/80b3ff/ffffff?text=Strategi+Marketing"
+                        alt="Marketing Laundry">
+                  </div>
+                  <div class="article-content">
+                     <div class="article-meta">
+                        <i class="bi bi-calendar3"></i>
+                        <span>5 Des 2025</span>
+                     </div>
+                     <h3 class="article-title">Strategi Marketing untuk Bisnis Laundry</h3>
+                     <p class="article-excerpt">Cara efektif memasarkan jasa laundry di era digital untuk menarik lebih
+                        banyak pelanggan.</p>
+                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                  </div>
+               </article>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+               <article class="article-card">
+                  <div class="article-image">
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Peralatan+Wajib" alt="Peralatan Laundry">
+                  </div>
+                  <div class="article-content">
+                     <div class="article-meta">
+                        <i class="bi bi-calendar3"></i>
+                        <span>1 Des 2025</span>
+                     </div>
+                     <h3 class="article-title">Peralatan Wajib untuk Usaha Laundry</h3>
+                     <p class="article-excerpt">Daftar lengkap peralatan yang harus Anda miliki untuk memulai usaha
+                        laundry profesional.</p>
+                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                  </div>
+               </article>
+            </div>
+         </div>
+
+         <!-- View All Button -->
+         <div class="text-center mt-5" data-aos="fade-up">
+            <a href="#" class="btn btn-view-all">
+               View All Posts <i class="bi bi-arrow-right-circle"></i>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== TESTIMONI SECTION ===== -->
+   <section class="testimonial-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Testimoni Pelanggan</h2>
+            <p>Apa kata mereka yang telah mempercayakan bisnis laundry bersama kami</p>
+         </div>
+         <div class="testimonial-scroll-container">
+            <div class="testimonial-scroll-track">
+               <!-- First set of testimonials -->
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Pelayanan sangat memuaskan! Mesin cuci yang saya beli awet dan
+                        berkualitas. Tim teknisi juga sangat membantu dalam proses instalasi. Highly recommended!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/0d6efd/ffffff?text=BP" alt="Budi Prasetyo"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Budi Prasetyo</h5>
+                        <p>Pemilik LaundryKu - Jakarta</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Harga kompetitif dengan kualitas terbaik. Sudah 2 tahun pakai
+                        peralatan dari LaundryPro dan masih awet. Support after sales-nya juga responsif banget!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/4d94ff/ffffff?text=SM" alt="Siti Maharani"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Siti Maharani</h5>
+                        <p>Owner Clean & Fresh - Bandung</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Terima kasih LaundryPro! Berkat konsultasi dan paket usahanya, bisnis
+                        laundry saya berkembang pesat. Investasi yang sangat worth it!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/80b3ff/ffffff?text=AR" alt="Ahmad Rizki"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Ahmad Rizki</h5>
+                        <p>Founder WashExpress - Surabaya</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Duplicate set for seamless loop -->
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Pelayanan sangat memuaskan! Mesin cuci yang saya beli awet dan
+                        berkualitas. Tim teknisi juga sangat membantu dalam proses instalasi. Highly recommended!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/0d6efd/ffffff?text=BP" alt="Budi Prasetyo"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Budi Prasetyo</h5>
+                        <p>Pemilik LaundryKu - Jakarta</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Harga kompetitif dengan kualitas terbaik. Sudah 2 tahun pakai
+                        peralatan dari LaundryPro dan masih awet. Support after sales-nya juga responsif banget!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/4d94ff/ffffff?text=SM" alt="Siti Maharani"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Siti Maharani</h5>
+                        <p>Owner Clean & Fresh - Bandung</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="testimonial-card">
+                  <div class="testimonial-content">
+                     <div class="star-rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </div>
+                     <p class="testimonial-text">"Terima kasih LaundryPro! Berkat konsultasi dan paket usahanya, bisnis
+                        laundry saya berkembang pesat. Investasi yang sangat worth it!"</p>
+                  </div>
+                  <div class="testimonial-author">
+                     <img src="https://placehold.co/60x60/80b3ff/ffffff?text=AR" alt="Ahmad Rizki"
+                        class="testimonial-avatar">
+                     <div class="author-info">
+                        <h5>Ahmad Rizki</h5>
+                        <p>Founder WashExpress - Surabaya</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
    <!-- ===== PARTNER SECTION ===== -->
    <section class="partner-section">
       <div class="container">
@@ -325,21 +673,77 @@
             <h2>Partner & Klien Kami</h2>
             <p>Dipercaya oleh berbagai brand dan perusahaan laundry ternama</p>
          </div>
-         <div class="row align-items-center justify-content-center g-4">
-            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+         <div class="partner-scroll-container">
+            <div class="partner-scroll-track">
+               <!-- First set of logos -->
                <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+1" alt="Partner 1" class="partner-logo">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in" data-aos-delay="200">
                <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+2" alt="Partner 2" class="partner-logo">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in" data-aos-delay="300">
                <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+3" alt="Partner 3" class="partner-logo">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in" data-aos-delay="400">
                <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+4" alt="Partner 4" class="partner-logo">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in" data-aos-delay="500">
                <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+5" alt="Partner 5" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+6" alt="Partner 6" class="partner-logo">
+               <!-- Duplicate set for seamless loop -->
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+1" alt="Partner 1" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+2" alt="Partner 2" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+3" alt="Partner 3" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+4" alt="Partner 4" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+5" alt="Partner 5" class="partner-logo">
+               <img src="https://placehold.co/150x80/cccccc/666666?text=Partner+6" alt="Partner 6" class="partner-logo">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== CHANNEL HIGHLIGHTS SECTION ===== -->
+   <section class="channels-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Temukan Kami Di</h2>
+            <p>Belanja dan terhubung dengan kami melalui berbagai platform</p>
+         </div>
+         <!-- Combined Social Media & Marketplace -->
+         <div class="row justify-content-center">
+            <div class="col-12" data-aos="fade-up">
+               <div class="channel-grid">
+                  <!-- Social Media -->
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-instagram"></i>
+                     <span>Instagram</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-facebook"></i>
+                     <span>Facebook</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-tiktok"></i>
+                     <span>TikTok</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-youtube"></i>
+                     <span>YouTube</span>
+                  </a>
+                  <!-- Marketplace -->
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-shop"></i>
+                     <span>Tokopedia</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-bag-fill"></i>
+                     <span>Shopee</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-cart-fill"></i>
+                     <span>Bukalapak</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-basket-fill"></i>
+                     <span>Lazada</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-globe"></i>
+                     <span>Website</span>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
@@ -404,6 +808,11 @@
          </div>
       </div>
    </footer>
+
+   <!-- Back to Top Button -->
+   <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up"></i>
+   </button>
 
    <!-- Bootstrap 5 JS -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
