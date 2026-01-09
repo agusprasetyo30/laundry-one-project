@@ -1,6 +1,7 @@
 :root {
    --primary-blue: #0d6efd;
    --accent-orange: #ff9800;
+   --accent-whatsapp: #128c7e;
    --light-grey: #f8f9fa;
    --white: #ffffff;
    --dark-text: #212529;
@@ -19,6 +20,16 @@ body {
 }
 
 /* ===== NAVBAR ===== */
+section#produk {
+   scroll-margin-top: 80px;
+}
+
+section#paket,
+section#tentang,
+section#blog {
+   scroll-margin-top: 20px;
+}
+
 .navbar {
    background: var(--white);
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -44,7 +55,7 @@ body {
 }
 
 .btn-cta-nav {
-   background: var(--accent-orange);
+   background: var(--accent-whatsapp);
    color: var(--white);
    padding: 0.5rem 1.5rem;
    border-radius: 50px;
@@ -54,9 +65,10 @@ body {
 }
 
 .btn-cta-nav:hover {
-   background: #e68900;
+   background: #094e46;
+   color: var(--white);
    transform: translateY(-2px);
-   box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+   box-shadow: 0 5px 15px rgba(11, 79, 67, 0.3);
 }
 
 /* ===== HERO SECTION ===== */
@@ -72,14 +84,14 @@ body {
 }
 
 .hero-content h1 {
-   font-size: 3.5rem;
+   font-size: 3.4rem;
    font-weight: 700;
    margin-bottom: 1.5rem;
    line-height: 1.2;
 }
 
 .hero-content p {
-   font-size: 1.25rem;
+   font-size: 1.10rem;
    margin-bottom: 2.5rem;
    font-weight: 300;
 }
@@ -139,6 +151,49 @@ body {
    50% {
       transform: translateY(-20px);
    }
+}
+
+/* ===== TRUST BADGES SECTION ===== */
+.trust-badges-section {
+   background: var(--white);
+   padding: 3rem 0;
+   border-bottom: 1px solid #e9ecef;
+}
+
+.trust-badge {
+   text-align: center;
+   padding: 1.5rem 1rem;
+   transition: all 0.3s ease;
+}
+
+.trust-badge:hover {
+   transform: translateY(-5px);
+}
+
+.trust-badge i {
+   font-size: 3rem;
+   color: #28a745;
+   margin-bottom: 0.75rem;
+   display: block;
+   transition: all 0.3s ease;
+}
+
+.trust-badge:hover i {
+   color: #218838;
+   transform: scale(1.1);
+}
+
+.trust-badge p {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--dark-text);
+   margin: 0.5rem 0 0.25rem 0;
+}
+
+.trust-badge small {
+   font-size: 0.85rem;
+   color: #6c757d;
+   display: block;
 }
 
 /* ===== STATS SECTION ===== */
@@ -256,7 +311,7 @@ body {
 
 /* ===== PAKET USAHA SECTION ===== */
 .paket-section {
-   padding: 5rem 0;
+   padding: 5rem 0 0;
    background: var(--light-grey);
 }
 
@@ -361,7 +416,9 @@ body {
 }
 
 .btn-package:hover {
-   background: #0b5ed7;
+   /* background: #0b5ed7; */
+   background: var(--accent-whatsapp);
+   color: var(--white);
    transform: translateY(-2px);
    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
 }
@@ -553,38 +610,19 @@ body {
    overflow: hidden;
 }
 
-.testimonial-scroll-container {
-   display: flex;
-   overflow: hidden;
-   width: 100%;
-   margin-top: 3rem;
-}
-
-.testimonial-scroll-track {
-   display: flex;
-   animation: scroll-testimonials 40s linear infinite;
-   gap: 2rem;
-}
-
-.testimonial-scroll-track:hover {
-   animation-play-state: paused;
-}
-
 .testimonial-card {
    background: var(--white);
    padding: 2rem;
    border-radius: 15px;
    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
    transition: all 0.3s ease;
-   min-width: 400px;
-   max-width: 400px;
-   flex-shrink: 0;
+   height: 100%;
+   /* Make full height in column */
 }
 
 .testimonial-card:hover {
    transform: translateY(-10px);
    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.2);
-   animation-play-state: paused;
 }
 
 .testimonial-content {
@@ -630,13 +668,49 @@ body {
    color: #6c757d;
 }
 
-@keyframes scroll-testimonials {
-   0% {
-      transform: translateX(0);
+/* Carousel Custom Styling */
+.carousel-indicators {
+   bottom: -50px;
+}
+
+.carousel-indicators button {
+   background-color: var(--primary-blue) !important;
+   width: 12px !important;
+   height: 12px !important;
+   border-radius: 50%;
+   margin: 0 5px !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+   width: 50px;
+   height: 50px;
+   background: rgba(13, 110, 253, 0.5);
+   border-radius: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+   left: -20px;
+}
+
+.carousel-control-next {
+   right: -20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+   background: var(--primary-blue);
+}
+
+@media (max-width: 991px) {
+   .carousel-control-prev {
+      left: 0;
    }
 
-   100% {
-      transform: translateX(-50%);
+   .carousel-control-next {
+      right: 0;
    }
 }
 
@@ -736,26 +810,31 @@ body {
    display: flex;
    animation: scroll-left 30s linear infinite;
    gap: 3rem;
+   width: max-content;
+   /* Ensure track is wide enough */
 }
 
-.partner-scroll-track:hover {
-   animation-play-state: paused;
-}
+/* Hover effects removed as requested */
+/* .partner-scroll-track:hover { animation-play-state: paused; } */
 
 .partner-logo {
-   filter: grayscale(100%);
-   opacity: 0.6;
-   transition: all 0.3s ease;
-   max-width: 150px;
-   min-width: 150px;
-   height: auto;
+   /* filter: grayscale(100%);  Users requested only image displayed, assuming no filter needed or keep original?
+      "hanya gambar/foto yang ditampilkan" implies raw image.
+      "tidak berefek apapun" implies no hover changes.
+   */
+   filter: none;
+   opacity: 1;
+   max-width: 200px;
+   /* min-width: 100px; */
+   height: 50px;
    flex-shrink: 0;
+   pointer-events: none;
+   /* Make unclickable */
+   user-select: none;
 }
 
-.partner-logo:hover {
-   filter: grayscale(0%);
-   opacity: 1;
-}
+/* Removed hover effects */
+/* .partner-logo:hover { ... } */
 
 @keyframes scroll-left {
    0% {
@@ -851,6 +930,18 @@ body {
       max-width: 350px;
    }
 
+   .trust-badge {
+      padding: 1rem 0.5rem;
+   }
+
+   .trust-badge i {
+      font-size: 2.5rem;
+   }
+
+   .trust-badge p {
+      font-size: 0.9rem;
+   }
+
    .section-title h2 {
       font-size: 1.8rem;
    }
@@ -884,10 +975,7 @@ body {
       font-size: 2.5rem;
    }
 
-   .testimonial-card {
-      min-width: 300px;
-      max-width: 300px;
-   }
+   /* Testimonial adjustments for carousel in mobile handled by Bootstrap classes d-none d-md-block etc */
 
    .back-to-top {
       width: 45px;

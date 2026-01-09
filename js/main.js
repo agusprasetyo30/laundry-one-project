@@ -10,7 +10,7 @@ function animateCounter() {
    const counters = document.querySelectorAll('.counter');
    counters.forEach(counter => {
       const target = parseInt(counter.getAttribute('data-target'));
-      const duration = 2000;
+      const duration = 5000;
       const increment = target / (duration / 16);
       let current = 0;
 
