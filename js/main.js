@@ -97,7 +97,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
-         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+         target.scrollIntoView({
+            behavior: 'smooth', block: 'start'
+         })
       }
    });
 });
@@ -111,6 +113,37 @@ window.addEventListener('scroll', () => {
    } else {
       backToTopButton.classList.remove('show');
    }
+});
+
+// Product Filtering
+document.addEventListener('DOMContentLoaded', () => {
+   const filterButtons = document.querySelectorAll('.btn-filter');
+   const productItems = document.querySelectorAll('.product-item');
+
+   if (window.location.hash === '#produk') {
+      const section = document.getElementById('produk');
+      if (section) section.scrollIntoView({ behavior: 'smooth' });
+   }
+
+   filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+         // Remove active class from all buttons
+         filterButtons.forEach(btn => btn.classList.remove('active'));
+         // Add active class to clicked button
+         button.classList.add('active');
+
+         const filter = button.getAttribute('data-filter');
+
+         productItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+               item.style.display = 'block';
+               // Re-trigger AOS if needed (optional since display block doesn't usually remove classes)
+            } else {
+               item.style.display = 'none';
+            }
+         });
+      });
+   });
 });
 
 backToTopButton.addEventListener('click', () => {
