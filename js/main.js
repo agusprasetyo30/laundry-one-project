@@ -5,6 +5,45 @@ AOS.init({
    offset: 100
 });
 
+// Initialize Swiper for Testimonials
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
+   slidesPerView: 1,
+   spaceBetween: 30,
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: false,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      // Mobile (less than 576px) - 1 item per slide
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+      // Tablet (576px and up) - 2 items per slide
+      576: {
+         slidesPerView: 2,
+         spaceBetween: 25,
+      },
+      // Desktop (992px and up) - 3 items per slide
+      992: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+      },
+   },
+   loop: true,
+   grabCursor: true,
+   effect: 'slide',
+});
+
 // Counter Animation
 function animateCounter() {
    const counters = document.querySelectorAll('.counter');
