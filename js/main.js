@@ -5,6 +5,145 @@ AOS.init({
    offset: 100
 });
 
+// Initialize Swiper for Testimonials
+const testimonialSwiper = new Swiper('.testimonialSwiper', {
+   slidesPerView: 1,
+   spaceBetween: 30,
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: false,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      // Mobile (less than 576px) - 1 item per slide
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+      // Tablet (576px and up) - 2 items per slide
+      576: {
+         slidesPerView: 2,
+         spaceBetween: 25,
+      },
+      // Desktop (992px and up) - 3 items per slide
+      992: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+      },
+   },
+   loop: true,
+   grabCursor: true,
+   effect: 'slide',
+});
+
+// Initialize Swiper for Promo
+const promoSwiper = new Swiper('.promoSwiper', {
+   slidesPerView: 2,
+   spaceBetween: 30,
+   autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      // Show 2 slides on all devices as requested
+      0: {
+         slidesPerView: 2,
+         spaceBetween: 15,
+      },
+      768: {
+         slidesPerView: 2,
+         spaceBetween: 30,
+      },
+   },
+   loop: true,
+   grabCursor: true,
+});
+
+// Initialize Swiper for Paket Usaha
+const paketSwiper = new Swiper('.paketSwiper', {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      // Mobile (< 992px) - 2 items per slide
+      0: {
+         slidesPerView: 2,
+         spaceBetween: 15,
+      },
+      // Desktop (>= 992px) - 3 items per slide
+      992: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+      },
+   },
+   loop: true,
+   grabCursor: true,
+});
+
+// Initialize Swiper for Blog
+const blogSwiper = new Swiper('.blogSwiper', {
+   slidesPerView: 4,
+   spaceBetween: 30,
+   autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      // Mobile (< 768px) - 2 items per slide as requested
+      0: {
+         slidesPerView: 2,
+         spaceBetween: 15,
+      },
+      // Tablet (768px - 1199px) - 3 items per slide
+      768: {
+         slidesPerView: 3,
+         spaceBetween: 25,
+      },
+      // Desktop (>= 1200px) - 4 items per slide
+      1200: {
+         slidesPerView: 4,
+         spaceBetween: 30,
+      },
+   },
+   loop: true,
+   grabCursor: true,
+});
+
 // Counter Animation
 function animateCounter() {
    const counters = document.querySelectorAll('.counter');

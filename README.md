@@ -4,63 +4,48 @@
 
 ```
 laundry/
-├── index.html          # File HTML utama
+├── index.html          # File HTML utama (Struktur & Layout)
 ├── css/
-│   └── style.css       # Stylesheet utama (Bootstrap styling)
+│   └── style.css       # Stylesheet utama & Custom Swiper styling
 ├── js/
-│   └── main.js         # JavaScript utama (animations, interactions)
-└── img/                # Folder untuk gambar (kosong, siap digunakan)
+│   └── main.js         # JavaScript utama (Swiper init, animations)
+└── img/                # Folder untuk gambar & assets
 ```
 
-## Deskripsi File
+## Deskripsi Fitur & Komponen Baru
 
-### index.html
-File HTML utama yang berisi:
-- Semantic HTML5 structure
-- SEO-optimized meta tags
-- Integration dengan Bootstrap 5, AOS, dan custom CSS/JS
-- Sections: Navbar, Hero, Stats, Why Us, Paket Usaha, Produk, Partner, Footer
+### 1. Migrasi Swiper Slider
+Beberapa section telah dimigrasikan dari grid statis/Bootstrap Carousel ke **Swiper JS** untuk fleksibilitas dan responsivitas yang lebih baik:
+- **Promo Section**: Menampilkan 2 slide secara konsisten di semua perangkat.
+- **Paket Usaha**: Menampilkan 3 item di desktop dan 2 item di mobile.
+- **Blog Section**: Menampilkan 4 item di desktop dan 2 item di mobile.
+- **Testimonial**: Slider testimonial dengan navigasi premium.
 
-### css/style.css
-File CSS eksternal yang berisi:
-- Custom CSS variables (color palette)
-- Styling untuk semua section
-- Responsive design dengan media queries
-- Hover effects dan animations
+### 2. UI/UX Enhancements
+- **Premium Navigation**: Tombol navigasi Swiper dengan efek *Glassmorphism* dan transisi ikon yang dinamis.
+- **How It Works Layout**: Layout 4 kolom tetap (single row) di semua ukuran layar untuk menjaga alur visual.
+- **Partner Auto-Scroll**: Track logo partner yang bergerak otomatis tanpa henti.
+- **Responsive Grid**: Penyesuaian `col` pada Trust Badges dan Why Us untuk tampilan mobile yang lebih rapi (2-3 kolom).
 
-### js/main.js
-File JavaScript eksternal yang berisi:
-- AOS initialization
-- Counter animation untuk stats
-- Countdown timer untuk promo
-- WhatsApp integration function
-- Smooth scroll functionality
+### 3. Deskripsi File
+- **index.html**: Menggunakan struktur Swiper untuk section kontemporer.
+- **css/style.css**: Menyertakan variabel warna kustom, efek glassmorphism, dan optimalisasi mobile yang mendalam.
+- **js/main.js**: Inisialisasi beberapa instance Swiper dengan pengaturan breakpoint yang spesifik.
 
-### img/
-Folder kosong untuk menyimpan gambar/asset yang akan digunakan
-
-## Teknologi yang Digunakan
-
-- **HTML5**: Semantic markup
-- **CSS3**: Custom styling dengan Bootstrap 5
-- **JavaScript ES6**: Modern JavaScript features
-- **Bootstrap 5**: Framework CSS untuk responsiveness
-- **AOS**: Animate On Scroll library
-- **Google Fonts**: Poppins font family
-
-## Cara Penggunaan
-
-1. Buka file `index.html` di browser
-2. Untuk development, gunakan Live Server atau HTTP server
-3. Untuk production, pastikan semua file path sudah correct
+## Teknologi & Library
+- **HTML5 & CSS3** (Vanilla & Bootstrap 5)
+- **Swiper JS**: Library slider modern untuk semua komponen interaktif.
+- **AOS (Animate On Scroll)**: Untuk efek kemunculan elemen.
+- **Bootstrap Icons**: Library ikon vektor.
 
 ## Customization
 
-### Mengubah Nomor WhatsApp
-Edit file `js/main.js`, cari fungsi `openWhatsApp()` dan ganti nomor telepon
+### Konfigurasi Slider
+Untuk menyesuaikan jumlah item yang tampil, edit `breakpoints` pada inisialisasi Swiper di `js/main.js`.
 
-### Mengubah Warna
-Edit file `css/style.css`, ubah CSS variables di `:root`
+### Mengubah Efek Glassmorphism
+Cari class `.swiper-button-prev/next` di `style.css` untuk mengubah `backdrop-filter` atau `background` opacity.
 
-### Menambah Gambar
-Simpan gambar di folder `img/` dan update src di `index.html`
+### WhatsApp Integration
+Ubah link/nomer di fungsi `openWhatsApp()` dalam `js/main.js`.
+
