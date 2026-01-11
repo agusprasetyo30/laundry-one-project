@@ -16,7 +16,7 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      dynamicBullets: false,
+      dynamicBullets: true,
    },
    navigation: {
       nextEl: '.swiper-button-next',
@@ -39,7 +39,7 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
          spaceBetween: 30,
       },
    },
-   loop: true,
+   loop: false,
    grabCursor: true,
    effect: 'slide',
 });
@@ -55,6 +55,7 @@ const promoSwiper = new Swiper('.promoSwiper', {
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: true,
    },
    navigation: {
       nextEl: '.swiper-button-next',
@@ -86,14 +87,20 @@ const paketSwiper = new Swiper('.paketSwiper', {
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: true,
    },
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
    },
    breakpoints: {
-      // Mobile (< 992px) - 2 items per slide
+      // Mobile (<= 576px) - 1 item per slide for a cleaner mobile view
       0: {
+         slidesPerView: 1,
+         spaceBetween: 12,
+      },
+      // Small tablets (>= 576px) - 2 items
+      576: {
          slidesPerView: 2,
          spaceBetween: 15,
       },
@@ -142,6 +149,42 @@ const blogSwiper = new Swiper('.blogSwiper', {
    },
    loop: true,
    grabCursor: true,
+});
+
+// Initialize Swiper for Produk (responsive - mobile carousel)
+const productSwiper = new Swiper('.product-swiper', {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   pagination: {
+      el: '.product-swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+   },
+   autoplay: {
+      delay: 5000,
+      // disableOnInteraction: false,
+   },
+   navigation: {
+      nextEl: '.product-swiper-next',
+      prevEl: '.product-swiper-prev',
+   },
+   breakpoints: {
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 15,
+      },
+      576: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+      },
+      992: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+      },
+   },
+   loop: false,
+   grabCursor: true,
+   watchOverflow: true,
 });
 
 // Counter Animation
@@ -275,12 +318,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
          productItems.forEach(item => {
             if (filter === 'all' || item.getAttribute('data-category') === filter) {
-               item.style.display = 'block';
-               // Re-trigger AOS if needed (optional since display block doesn't usually remove classes)
+               // clear inline display to use default (allow Swiper to compute layout)
+               item.style.display = '';
             } else {
                item.style.display = 'none';
             }
          });
+
+         // If Swiper is initialized, update it and reset to the first slide so there are no empty slides
+         if (typeof productSwiper !== 'undefined' && productSwiper) {
+            productSwiper.update();
+            productSwiper.slideTo(0);
+         }
+
+         // Refresh AOS in case filtered items need animation re-run
+         if (typeof AOS !== 'undefined' && AOS.refresh) {
+            AOS.refresh();
+         }
       });
    });
 });
