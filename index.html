@@ -332,7 +332,7 @@
                   <div class="promo-card">
                      <div class="promo-image">
                         <img src="https://placehold.co/800x400/ff9800/ffffff?text=Promo+Paket+Pemula"
-                           alt="Promo Paket Usaha" class="img-fluid">
+                           alt="Promo Paket Usaha" class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/ff9800/ffffff?text=Promo+Paket+Pemula">
                         <div class="promo-badge">HOT DEAL</div>
                      </div>
                      <div class="promo-content text-center">
@@ -353,7 +353,7 @@
                   <div class="promo-card">
                      <div class="promo-image">
                         <img src="https://placehold.co/800x400/0d6efd/ffffff?text=Bonus+Setrika+Uap" alt="Promo Bonus"
-                           class="img-fluid">
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/0d6efd/ffffff?text=Bonus+Setrika+Uap">
                         <div class="promo-badge">LIMITED</div>
                      </div>
                      <div class="promo-content text-center">
@@ -373,7 +373,7 @@
                   <div class="promo-card">
                      <div class="promo-image">
                         <img src="https://placehold.co/800x400/20c997/ffffff?text=Gratis+Ongkir" alt="Promo Ongkir"
-                           class="img-fluid">
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/20c997/ffffff?text=Gratis+Ongkir">
                         <div class="promo-badge">SPECIAL</div>
                      </div>
                      <div class="promo-content text-center">
@@ -394,7 +394,7 @@
                   <div class="promo-card">
                      <div class="promo-image">
                         <img src="https://placehold.co/800x400/6610f2/ffffff?text=Diskon+Parfum" alt="Promo Parfum"
-                           class="img-fluid">
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/6610f2/ffffff?text=Diskon+Parfum">
                         <div class="promo-badge">FLASH SALE</div>
                      </div>
                      <div class="promo-content text-center">
@@ -429,6 +429,14 @@
    </section>
 
    <!-- ===== HOW IT WORKS SECTION ===== -->
+     <!-- Lightbox Modal for Promo Images -->
+     <div id="promoLightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-overlay" data-action="close"></div>
+        <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Promo image preview">
+           <button class="lightbox-close" aria-label="Tutup preview" data-action="close">×</button>
+           <img src="" alt="Preview" class="lightbox-img">
+        </div>
+     </div>
    <section class="how-it-works-section">
       <div class="container">
          <div class="section-title" data-aos="fade-up">

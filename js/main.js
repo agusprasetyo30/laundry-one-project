@@ -345,3 +345,48 @@ backToTopButton.addEventListener('click', () => {
       behavior: 'smooth'
    });
 });
+
+// Simple lightbox for promo images
+(function () {
+   const thumbs = document.querySelectorAll('.promo-thumb');
+   const lightbox = document.getElementById('promoLightbox');
+   if (!lightbox || !thumbs.length) return;
+
+   const overlay = lightbox.querySelector('.lightbox-overlay');
+   const img = lightbox.querySelector('.lightbox-img');
+   const closeBtn = lightbox.querySelector('.lightbox-close');
+
+   function openLightbox(src, alt) {
+      img.src = src || '';
+      img.alt = alt || '';
+      lightbox.classList.add('show');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+   }
+
+   function closeLightbox() {
+      lightbox.classList.remove('show');
+      lightbox.setAttribute('aria-hidden', 'true');
+      img.src = '';
+      document.body.style.overflow = '';
+   }
+
+   thumbs.forEach(t => {
+      t.addEventListener('click', (e) => {
+         const src = t.getAttribute('data-full') || t.src;
+         openLightbox(src, t.alt || '');
+      });
+   });
+
+   [overlay, closeBtn].forEach(el => el && el.addEventListener('click', closeLightbox));
+
+   // Close on ESC
+   document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+   });
+
+   // Prevent clicks on image from closing
+   lightbox.querySelector('.lightbox-content').addEventListener('click', (e) => {
+      e.stopPropagation();
+   });
+})();
