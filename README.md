@@ -1,51 +1,108 @@
-# Laundry Landing Page - Struktur Project
+# Starter Pack Borwita Project
+Project ini adalah project boilerplate yang digunakan untuk project baru pada borwita
 
-## Struktur File & Folder
+## Configuration
+- API Authentification, Validation & basic configuration
+- Controller Configuration with Validation & exception handler
+- View Blade Template with Stisla Template
+- Request Response Configuration
 
-```
-laundry/
-├── index.html          # File HTML utama (Struktur & Layout)
-├── css/
-│   └── style.css       # Stylesheet utama & Custom Swiper styling
-├── js/
-│   └── main.js         # JavaScript utama (Swiper init, animations)
-└── img/                # Folder untuk gambar & assets
-```
+## Features
 
-## Deskripsi Fitur & Komponen Baru
+### Pemisahan logic, semua tidak ditampung di controller
+Hal ini digunakan untuk memudahkan pemahaman dan pemeliharaan kode, karena pada controller tidak terlalu panjang dan tidak terlalu kompleks
 
-### 1. Migrasi Swiper Slider
-Beberapa section telah dimigrasikan dari grid statis/Bootstrap Carousel ke **Swiper JS** untuk fleksibilitas dan responsivitas yang lebih baik:
-- **Promo Section**: Menampilkan 2 slide secara konsisten di semua perangkat.
-- **Paket Usaha**: Menampilkan 3 item di desktop dan 2 item di mobile.
-- **Blog Section**: Menampilkan 4 item di desktop dan 2 item di mobile.
-- **Testimonial**: Slider testimonial dengan navigasi premium.
+1. `app/Repositories`
+   - Fungsi Utama
+      Layer akses data (data source abstraction).
+   - Tempat:
+      - Query Eloquent / Query Builder
+      - Ambil data dari DB
+      - Bisa juga API / cache / file
+   
+   > Controller & Service tidak peduli data datang dari mana.
 
-### 2. UI/UX Enhancements
-- **Premium Navigation**: Tombol navigasi Swiper dengan efek *Glassmorphism* dan transisi ikon yang dinamis.
-- **How It Works Layout**: Layout 4 kolom tetap (single row) di semua ukuran layar untuk menjaga alur visual.
-- **Partner Auto-Scroll**: Track logo partner yang bergerak otomatis tanpa henti.
-- **Responsive Grid**: Penyesuaian `col` pada Trust Badges dan Why Us untuk tampilan mobile yang lebih rapi (2-3 kolom).
+2. `app/Services`
+   - Fungsi Utama
+      - Business logic
+      - Pemisahan logika bisnis
+   - Tempat:
+      - Rule diskon
+      - Mapping payload
+      - Orkestrasi banyak repository
+      - Call API eksternal
+      - Proses yang “bermakna bisnis”
 
-### 3. Deskripsi File
-- **index.html**: Menggunakan struktur Swiper untuk section kontemporer.
-- **css/style.css**: Menyertakan variabel warna kustom, efek glassmorphism, dan optimalisasi mobile yang mendalam.
-- **js/main.js**: Inisialisasi beberapa instance Swiper dengan pengaturan breakpoint yang spesifik.
+   > Harus berdisi sendiri dan testable
 
-## Teknologi & Library
-- **HTML5 & CSS3** (Vanilla & Bootstrap 5)
-- **Swiper JS**: Library slider modern untuk semua komponen interaktif.
-- **AOS (Animate On Scroll)**: Untuk efek kemunculan elemen.
-- **Bootstrap Icons**: Library ikon vektor.
+3. `app/Traits`
+   - Fungsi Utama
+      - Helper lintas class
+   - Tempat:
+      - Helper method kecil
+      - Logic yang dipakai lintas class
+      - Tidak punya state penting
 
-## Customization
+#### Penjelasan Singkat
+- Controller → “apa yang terjadi”
+- Service → “bagaimana bisnis bekerja”
+- Repository → “data dari mana”
+- Trait → “helper lintas class”
 
-### Konfigurasi Slider
-Untuk menyesuaikan jumlah item yang tampil, edit `breakpoints` pada inisialisasi Swiper di `js/main.js`.
+### Templating View
+Untuk templating pada project ini menggunakan [Layout Blade Inheritance](https://laravel.com/docs/12.x/blade#layouts-using-template-inheritance) yang dimana dipisah antar bagian agar mudah untuk di maintenance. Pada project ini terdapat beberapa bagian yaitu : 
+- breadcrumb
+- navbar
+- sidebar
+- footer
 
-### Mengubah Efek Glassmorphism
-Cari class `.swiper-button-prev/next` di `style.css` untuk mengubah `backdrop-filter` atau `background` opacity.
+Dan untuk parent layoutnya yaitu `app.blade.php` dan `custom.blade.php` menyesuaikan dengan kebutuhan sistem
 
-### WhatsApp Integration
-Ubah link/nomer di fungsi `openWhatsApp()` dalam `js/main.js`.
+### Blade Component Formatting
+Konfigurasi ini digunakan untuk formatting pada blade yang nantinya digunakan untuk memformat data yang akan di tampilkan pada view. 
+1. Konfigurasi Utama formatting blade (yang digunakan pada module view)
+   ```php
+   // Memanggil parent layout template
+   @extends('layouts.app', ['title' => 'Title Name'])
 
+   // Section title page
+   @section('page-title', 'Title Page Name')
+
+   // Section content utama
+   @section('content')
+   // ...
+   @endsection
+   ```
+
+2. Komponen *stack* pada layout template yang dapat digunakan
+   ```php
+   // Stack CSS Library
+   @push('css-library')
+   // ...
+   @endpush
+
+   // Stack CSS jika menggunakan link
+   @push('css-link')
+   // ...
+   @endpush
+
+   // Stack CSS Custom
+   @push('css-custom')
+   //...
+   @endpush
+
+   // Stack JS Library
+   @push('js-library')
+   // ...
+   @endpush
+
+   // Stack JS Custom
+   @push('js-custom')
+   // ...
+   @endpush
+
+   // Stack JS Spesifik File
+   @push('js-specific-file')
+   // ...
+   @endpush
+   ```

@@ -1,0 +1,55 @@
+<?php
+
+namespace App\Http\Requests\Invoice;
+
+use App\Http\Requests\BaseRequest;
+use Illuminate\Foundation\Http\FormRequest;
+
+class InvoiceDetailsRequest extends BaseRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'distributor_code' => ['required', 'string'],
+            'invoice_no'   => ['required', 'array', 'max:10'],
+            'invoice_no.*' => ['required', 'string'],
+        ];
+    }
+
+    /**
+     * Dipanggil sebelum validasi dijalankan.
+     * Di sini kita decode query string yang “rusak” tadi.
+     */
+    protected function prepareForValidation()
+    {
+        // Ambil raw query string dari URL yang sudah diconvert ke urlencode()
+        $rawQuery = $this->getQueryString();
+
+        // jika tidak ada data, maka di abaikan
+        if (!$rawQuery) {
+            return;
+        }
+        
+        // melakukan decode pada url query string
+        $decoded = urldecode($rawQuery);
+        
+        // Melakukan parse/memisahkan query string menjadi variabel php terpisah
+        parse_str($decoded, $params);
+        
+        // merge data ke request dan mengirimkan data untuk dilakukan validasi sesuai rule
+        $this->merge($params);
+    }
+}
