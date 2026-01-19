@@ -4,8 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index1');
-})->name('index1');
+    return view('index');
+})->name('index');
 
 Route::get('/test', function (Request $request) {
     $repo = new \App\Repositories\JabatanRepository;

@@ -1,0 +1,17 @@
+@extends('landing-page.layout')
+
+@section('content')
+   @include('landing-page.sections.hero')
+   @include('landing-page.sections.trust-badges')
+   @include('landing-page.sections.stats')
+   @include('landing-page.sections.why-us')
+   @include('landing-page.sections.promo')
+   @include('landing-page.sections.how-it-works')
+   @include('landing-page.sections.paket')
+   @include('landing-page.sections.products')
+   @include('landing-page.sections.blog')
+   @include('landing-page.sections.testimonials')
+   @include('landing-page.sections.partners')
+   @include('landing-page.sections.channels')
+   @include('landing-page.sections.faq')
+@endsection
