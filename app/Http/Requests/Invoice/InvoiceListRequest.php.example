@@ -1,0 +1,79 @@
+<?php
+
+namespace App\Http\Requests\Invoice;
+
+use App\Http\Requests\BaseRequest;
+use Carbon\Carbon;
+use Illuminate\Foundation\Http\FormRequest;
+
+class InvoiceListRequest extends BaseRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'distributor_code' => ['required', 'string', 'max:50'],
+            // 'after_or_equal:2025-07-01', 'before_or_equal:2025-07-14' hanya untuk sementara, nanti dihapus
+            'start_date' => ['required', 'date', 'date_format:Y-m-d', 'after_or_equal:2025-07-01', 'before_or_equal:2025-07-14'],
+            'last_request_at' => ['nullable', 'numeric'],
+            'end_date' => ['required', 'date', 'date_format:Y-m-d', 'after_or_equal:start_date', 'before_or_equal:2025-07-14']
+        ];
+    }
+
+    public function withValidator($validator): void
+    {
+        $validator->after(function ($validator) {
+            $start_date = $this->input('start_date');
+            $end_date   = $this->input('end_date');
+
+            // Jika rule dasar (required/date_format) gagal, tidak usah lanjut
+            if ($validator->errors()->has('start_date') || $validator->errors()->has('end_date')) {
+                return;
+            }
+
+            try {
+                // date_format:Y-m-d sudah menjamin format benar
+                $start = Carbon::createFromFormat('Y-m-d', $start_date);
+                $end   = Carbon::createFromFormat('Y-m-d', $end_date);
+            } catch (\Exception $e) {
+                return;
+            }
+
+            // cek apakah end_date < start_date
+            if ($end->lt($start)) {
+                $validator->errors()->add(
+                    'end_date',
+                    'end_date data cannot be less than start_date.'
+                );
+            }
+
+            // cek apakah end_date > start_date + 7 hari
+            if ($end->gt($start->copy()->addDays(7))) {
+                $validator->errors()->add(
+                    'end_date',
+                    'end_date is a maximum of 7 days after the start_date.'
+                );
+            }
+        });
+    }
+
+    public function messages(): array
+    {
+        return [
+            'start_date.after_or_equal'  => 'Start date must be on or after 1 July 2025.',
+            'start_date.before_or_equal' => 'Start date must be on or before 14 July 2025.',
+        ];
+    }
+}

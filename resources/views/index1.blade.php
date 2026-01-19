@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik. Mitra terpercaya untuk sukseskan bisnis laundry Anda.">
+   <meta name="keywords"
+      content="peralatan laundry, mesin cuci, pengering, setrika uap, paket usaha laundry, grosir laundry">
+   <meta name="author" content="LaundryPro">
+   <meta name="robots" content="index, follow">
+   <link rel="canonical" href="https://www.laundrypro.co.id/">
+
+   <!-- Open Graph Meta Tags for Social Media -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="LaundryPro - Pusat Grosir Peralatan Laundry Terlengkap">
+   <meta property="og:description"
+      content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik. Mitra terpercaya untuk sukseskan bisnis laundry Anda.">
+   <meta property="og:url" content="https://www.laundrypro.co.id/">
+   <meta property="og:image" content="https://www.laundrypro.co.id/assets/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:site_name" content="LaundryPro">
+   <meta property="og:locale" content="id_ID">
+
+   <!-- Twitter Card Meta Tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="LaundryPro - Pusat Grosir Peralatan Laundry Terlengkap">
+   <meta name="twitter:description"
+      content="Pusat grosir peralatan laundry terlengkap dengan harga murah, garansi resmi, dan layanan purna jual terbaik.">
+   <meta name="twitter:image" content="https://www.laundrypro.co.id/assets/twitter-card.jpg">
+
+   <title>Penyedia Jasa & Pusat Grosir Peralatan Laundry - Mitra Terpercaya</title>
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+   <!-- AOS Animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="{{ asset('css/landing-page/style.css') }}">
+
+   @verbatim
+   <!-- Schema.org Structured Data -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "LocalBusiness",
+     "name": "LaundryPro",
+     "image": "https://www.laundrypro.co.id/assets/logo.png",
+     "@id": "https://www.laundrypro.co.id",
+     "url": "https://www.laundrypro.co.id",
+     "telephone": "+62-812-3456-7890",
+     "priceRange": "$$",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Jl. Industri No. 123",
+       "addressLocality": "Jakarta",
+       "postalCode": "12345",
+       "addressCountry": "ID"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": -6.2088,
+       "longitude": 106.8456
+     },
+     "openingHoursSpecification": {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": [
+         "Monday",
+         "Tuesday",
+         "Wednesday",
+         "Thursday",
+         "Friday",
+         "Saturday"
+       ],
+       "opens": "08:00",
+       "closes": "17:00"
+     },
+     "sameAs": [
+       "https://www.facebook.com/laundrypro",
+       "https://www.instagram.com/laundrypro",
+       "https://www.tiktok.com/@laundrypro"
+     ],
+     "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.8",
+       "reviewCount": "150"
+     }
+   }
+   </script>
+   @endverbatim
+</head>
+
+<body>
+   <!-- ===== NAVBAR ===== -->
+   <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+      <div class="container">
+         <a class="navbar-brand" href="index.html" aria-label="LaundryPro Home">
+            <i class="bi bi-water"></i> LaundryPro
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+               <li class="nav-item">
+                  <a class="nav-link" href="#beranda">Beranda</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#tentang">Tentang Kami</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#paket">Paket Usaha</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#produk">Produk</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog & Tips</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Hubungi Kami</a>
+               </li>
+               <li class="nav-item">
+                  <button class="btn btn-cta-nav" onclick="openWhatsApp()" aria-label="Konsultasi via WhatsApp">
+                     <i class="bi bi-whatsapp"></i> Konsultasi WA
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- ===== HERO SECTION ===== -->
+   <section id="beranda" class="hero-section">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+               <div class="hero-content">
+                  <h1>Pusat Grosir Peralatan Laundry Lengkap & Terjangkau</h1>
+                  <p>Distributor peralatan laundry terlengkap. Semua kebutuhan usaha laundry tersedia dalam satu tempat
+                     dengan harga kompetitif dan layanan terpercaya.</p>
+                  <div class="hero-buttons">
+                     <button class="btn btn-hero-primary" onclick="openWhatsApp()">
+                        <i class="bi bi-chat-dots-fill"></i> Konsultasi Gratis Sekarang
+                     </button>
+                     <button class="btn btn-hero-secondary" onclick="scrollToSection('promo')">
+                        <i class="bi bi-tag-fill"></i> Lihat Promo Hari Ini
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="200">
+               <div class="hero-image">
+                  <img src="https://onegrosirlaundry.com/wp-content/uploads/2025/09/hero-lp-1.png"
+                     alt="Ilustrasi Bisnis Laundry Modern" loading="lazy" width="500" height="500">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== TRUST BADGES SECTION ===== -->
+   <section class="trust-badges-section">
+      <div class="container">
+         <div class="row g-4 align-items-center justify-content-center">
+            <div class="col-lg-2 col-md-4 col-4" data-aos="fade-up" data-aos-delay="100">
+               <div class="trust-badge">
+                  <i class="bi bi-shield-fill-check"></i>
+                  <p>Garansi Resmi</p>
+                  <small>2 Tahun</small>
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-4" data-aos="fade-up" data-aos-delay="200">
+               <div class="trust-badge">
+                  <i class="bi bi-award-fill"></i>
+                  <p>Sertifikat ISO</p>
+                  <small>Certified</small>
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-4" data-aos="fade-up" data-aos-delay="300">
+               <div class="trust-badge">
+                  <i class="bi bi-cash-coin"></i>
+                  <p>Harga Transparan</p>
+                  <small>No Hidden Fee</small>
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-4" data-aos="fade-up" data-aos-delay="400">
+               <div class="trust-badge">
+                  <i class="bi bi-arrow-repeat"></i>
+                  <p>Return Policy</p>
+                  <small>30 Hari</small>
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-4" data-aos="fade-up" data-aos-delay="500">
+               <div class="trust-badge">
+                  <i class="bi bi-headset"></i>
+                  <p>Support 24/7</p>
+                  <small>Fast Response</small>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== STATS SECTION ===== -->
+   <section class="stats-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+               <div class="stat-item">
+                  <i class="bi bi-people-fill stat-icon"></i>
+                  <div class="stat-number counter" data-target="5000">0</div>
+                  <div class="stat-label">Total Pelanggan</div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+               <div class="stat-item">
+                  <i class="bi bi-check-circle-fill stat-icon"></i>
+                  <div class="stat-number counter" data-target="12500">0</div>
+                  <div class="stat-label">Transaksi Berhasil</div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+               <div class="stat-item">
+                  <i class="bi bi-geo-alt-fill stat-icon"></i>
+                  <div class="stat-number counter" data-target="150">0</div>
+                  <div class="stat-label">Kota Terjangkau</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== WHY US SECTION ===== -->
+   <section id="tentang" class="why-us-section">
+      <div class="container">
+         <!-- About Description -->
+         <div class="row align-items-center mb-5 pb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+               <div class="about-content">
+                  <h2 class="mb-4">Tentang LaundryPro</h2>
+                  <p class="lead">Kami adalah distributor dan penyedia solusi lengkap peralatan laundry terpercaya di
+                     Indonesia sejak 2015.</p>
+                  <p>Dengan pengalaman lebih dari 8 tahun, kami telah membantu ribuan pengusaha laundry memulai dan
+                     mengembangkan bisnis mereka. Kami menyediakan peralatan berkualitas tinggi, harga kompetitif, serta
+                     layanan purna jual yang responsif.</p>
+                  <p>Komitmen kami adalah menjadi mitra terpercaya yang tidak hanya menjual produk, tetapi juga
+                     memberikan konsultasi bisnis dan dukungan teknis untuk kesuksesan usaha laundry Anda.</p>
+
+                  <button class="btn btn-cta-nav mt-3" onclick="openWhatsApp()">
+                     <i class="bi bi-whatsapp"></i> Hubungi Kami
+                  </button>
+               </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+               <div class="about-image">
+                  <img src="https://placehold.co/600x400/f8f9fa/0d6efd?text=gambar+vector+art+about+me"
+                     alt="Tentang LaundryPro" class="img-fluid rounded" loading="lazy" width="600" height="400">
+               </div>
+            </div>
+         </div>
+
+         <!-- Why Choose Us -->
+         <div class="section-title" data-aos="fade-up">
+            <h2>Mengapa Memilih Kami?</h2>
+            <p>Keunggulan yang membuat kami menjadi pilihan terbaik untuk bisnis laundry Anda</p>
+         </div>
+         <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+               <div class="feature-card">
+                  <i class="bi bi-tag-fill feature-icon"></i>
+                  <h3>Harga Distributor</h3>
+                  <p>Jaminan harga termurah karena kami adalah distributor tangan pertama</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="200">
+               <div class="feature-card">
+                  <i class="bi bi-tools feature-icon"></i>
+                  <h3>Teknisi Ahli</h3>
+                  <p>Tim teknisi tersertifikasi siap membantu instalasi dan maintenance unit</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="300">
+               <div class="feature-card">
+                  <i class="bi bi-box-seam-fill feature-icon"></i>
+                  <h3>Ready Stock</h3>
+                  <p>Ribuan unit mesin dan sparepart siap kirim ke seluruh Indonesia</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-delay="400">
+               <div class="feature-card">
+                  <i class="bi bi-gear-wide-connected feature-icon"></i>
+                  <h3>Gratis Instalasi</h3>
+                  <p>Layanan gratis pemasangan dan training penggunaan mesin laundry</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== PROMO SECTION ===== -->
+   <section id="promo" class="promo-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Promo Spesial Bulan Ini</h2>
+            <p>Dapatkan penawaran terbaik untuk memulai bisnis laundry Anda</p>
+         </div>
+
+         <div class="swiper promoSwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+               <!-- Promo 1 -->
+               <div class="swiper-slide">
+                  <div class="promo-card">
+                     <div class="promo-image">
+                        <img src="https://placehold.co/800x400/ff9800/ffffff?text=Promo+Paket+Pemula"
+                           alt="Promo Paket Usaha" class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/ff9800/ffffff?text=Promo+Paket+Pemula">
+                        <div class="promo-badge">HOT DEAL</div>
+                     </div>
+                     <div class="promo-content text-center">
+                        <h3>Paket Usaha Pemula</h3>
+                        <p class="promo-desc">Diskon 30% untuk pembelian paket usaha laundry pemula lengkap dengan
+                           instalasi.</p>
+                        <div class="promo-price mb-3">
+                           <span class="old-price d-inline-block me-2">Rp 25.000.000</span>
+                           <span class="new-price">Rp 17.500.000</span>
+                        </div>
+                        <button class="btn btn-sm btn-promo" onclick="openWhatsApp()">Ambil Promo</button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Promo 2 -->
+               <div class="swiper-slide">
+                  <div class="promo-card">
+                     <div class="promo-image">
+                        <img src="https://placehold.co/800x400/0d6efd/ffffff?text=Bonus+Setrika+Uap" alt="Promo Bonus"
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/0d6efd/ffffff?text=Bonus+Setrika+Uap">
+                        <div class="promo-badge">LIMITED</div>
+                     </div>
+                     <div class="promo-content text-center">
+                        <h3>Bonus Setrika Uap</h3>
+                        <p class="promo-desc">Gratis 1 unit setrika uap boiler 10L untuk setiap pembelian Paket
+                           Medium.</p>
+                        <div class="promo-price mb-3">
+                           <span class="text-success fw-bold fs-4">GRATIS BONUS</span>
+                        </div>
+                        <button class="btn btn-sm btn-promo" onclick="openWhatsApp()">Klaim Bonus</button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Promo 3 -->
+               <div class="swiper-slide">
+                  <div class="promo-card">
+                     <div class="promo-image">
+                        <img src="https://placehold.co/800x400/20c997/ffffff?text=Gratis+Ongkir" alt="Promo Ongkir"
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/20c997/ffffff?text=Gratis+Ongkir">
+                        <div class="promo-badge">SPECIAL</div>
+                     </div>
+                     <div class="promo-content text-center">
+                        <h3>Gratis Ongkir Jawa-Bali</h3>
+                        <p class="promo-desc">Subsidi ongkos kirim hingga 100% untuk pengiriman paket usaha ke
+                           seluruh Jawa & Bali.</p>
+                        <div class="promo-price mb-3">
+                           <span class="old-price d-inline-block me-2">Rp 2.000.000</span>
+                           <span class="text-success fw-bold fs-4">GRATIS Ongkir</span>
+                        </div>
+                        <button class="btn btn-sm btn-promo" onclick="openWhatsApp()">Klaim Promo</button>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Promo 4 -->
+               <div class="swiper-slide">
+                  <div class="promo-card">
+                     <div class="promo-image">
+                        <img src="https://placehold.co/800x400/6610f2/ffffff?text=Diskon+Parfum" alt="Promo Parfum"
+                           class="img-fluid promo-thumb" data-full="https://placehold.co/1600x800/6610f2/ffffff?text=Diskon+Parfum">
+                        <div class="promo-badge">FLASH SALE</div>
+                     </div>
+                     <div class="promo-content text-center">
+                        <h3>Paket Parfum Laundry</h3>
+                        <p class="promo-desc">Diskon 50% untuk pembelian paket parfum laundry 5 Liter varian apa
+                           saja.</p>
+                        <div class="promo-price mb-3">
+                           <span class="old-price d-inline-block me-2">Rp 250.000</span>
+                           <span class="new-price">Rp 125.000</span>
+                        </div>
+                        <button class="btn btn-sm btn-promo" onclick="openWhatsApp()">Beli Sekarang</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+
+      </div>
+      <div class="countdown-timer">
+         <p>Promo Berakhir Dalam:</p>
+         <div class="timer-display">
+            <span id="days1">05</span>:<span id="hours1">12</span>:<span id="mins1">34</span>:<span id="secs1">56</span>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== HOW IT WORKS SECTION ===== -->
+     <!-- Lightbox Modal for Promo Images -->
+     <div id="promoLightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-overlay" data-action="close"></div>
+        <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Promo image preview">
+           <button class="lightbox-close" aria-label="Tutup preview" data-action="close">×</button>
+           <img src="" alt="Preview" class="lightbox-img">
+        </div>
+     </div>
+   <section class="how-it-works-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Alur pengerjaan paket usaha laundry</h2>
+            <p>4 Langkah mudah memulai bisnis laundry impian Anda</p>
+         </div>
+
+         <div class="row g-4 position-relative">
+            <!-- Connecting Line (Desktop Only) -->
+            <div class="process-line d-lg-block"></div>
+
+            <!-- Step 1 -->
+            <div class="col-3" data-aos="fade-up" data-aos-delay="100">
+               <div class="step-card">
+                  <div class="step-icon">
+                     <i class="bi bi-chat-dots"></i>
+                     <span class="step-number">1</span>
+                  </div>
+                  <h4>Konsultasi</h4>
+                  <p>Hubungi kami untuk konsultasi kebutuhan dan budget usaha Anda.</p>
+               </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-3" data-aos="fade-up" data-aos-delay="200">
+               <div class="step-card">
+                  <div class="step-icon">
+                     <i class="bi bi-cart-check"></i>
+                     <span class="step-number">2</span>
+                  </div>
+                  <h4>Pilih Paket</h4>
+                  <p>Pilih paket usaha atau produk yang sesuai dengan rencana bisnis.</p>
+               </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
+               <div class="step-card">
+                  <div class="step-icon">
+                     <i class="bi bi-tools"></i>
+                     <span class="step-number">3</span>
+                  </div>
+                  <h4>Instalasi</h4>
+                  <p>Tim teknisi kami melakukan pengiriman, instalasi, dan training.</p>
+               </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-3" data-aos="fade-up" data-aos-delay="400">
+               <div class="step-card">
+                  <div class="step-icon">
+                     <i class="bi bi-shop"></i>
+                     <span class="step-number">4</span>
+                  </div>
+                  <h4>Siap Buka</h4>
+                  <p>Bisnis laundry Anda siap beroperasi dan menghasilkan keuntungan.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== PAKET USAHA SECTION ===== -->
+   <section id="paket" class="paket-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Paket Usaha Unggulan</h2>
+            <p>Pilih paket yang sesuai dengan kebutuhan bisnis laundry Anda</p>
+         </div>
+         <div class="swiper paketSwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+               <!-- Paket Starter -->
+               <div class="swiper-slide">
+                  <div class="package-card">
+                     <span class="promo-badge-paket">PROMO</span>
+                     <h3 class="package-title">Paket Starter</h3>
+                     <div class="price-section">
+                        <div class="old-price">Rp 25.000.000</div>
+                        <div class="new-price">Rp 18.500.000</div>
+                     </div>
+                     <ul class="package-features">
+                        <li><i class="bi bi-check-circle-fill"></i> 1 Mesin Cuci 10kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 1 Mesin Pengering 10kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 1 Setrika Uap</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gratis Instalasi</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Garansi 1 Tahun</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Training Gratis</li>
+                     </ul>
+                     <button class="btn btn-package" onclick="openWhatsApp()">
+                        <i class="bi bi-whatsapp"></i> Konsultasikan Bisnis Laundry Anda
+                     </button>
+                  </div>
+               </div>
+
+               <!-- Paket Professional -->
+               <div class="swiper-slide">
+                  <div class="package-card">
+                     <span class="promo-badge-paket">HOT DEAL</span>
+                     <h3 class="package-title">Paket Professional</h3>
+                     <div class="price-section">
+                        <div class="old-price">Rp 45.000.000</div>
+                        <div class="new-price">Rp 35.900.000</div>
+                     </div>
+                     <ul class="package-features">
+                        <li><i class="bi bi-check-circle-fill"></i> 2 Mesin Cuci 15kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 2 Mesin Pengering 15kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 2 Setrika Uap Premium</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gratis Instalasi & Rak Display</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Garansi 2 Tahun</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Marketing Kit + Training</li>
+                     </ul>
+                     <button class="btn btn-package" onclick="openWhatsApp()">
+                        <i class="bi bi-whatsapp"></i> Konsultasikan Bisnis Laundry Anda
+                     </button>
+                  </div>
+               </div>
+
+               <!-- Paket Enterprise -->
+               <div class="swiper-slide">
+                  <div class="package-card">
+                     <span class="promo-badge-paket">BEST VALUE</span>
+                     <h3 class="package-title">Paket Enterprise</h3>
+                     <div class="price-section">
+                        <div class="old-price">Rp 75.000.000</div>
+                        <div class="new-price">Rp 62.500.000</div>
+                     </div>
+                     <ul class="package-features">
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Mesin Cuci 20kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Mesin Pengering 20kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Setrika Uap Industrial</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gratis Semua Perlengkapan</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Garansi 3 Tahun</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Full Support + Konsultasi Bisnis</li>
+                     </ul>
+                     <button class="btn btn-package" onclick="openWhatsApp()">
+                        <i class="bi bi-whatsapp"></i> Konsultasikan Bisnis Laundry Anda
+                     </button>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="package-card">
+                     <span class="promo-badge-paket">BEST VALUE</span>
+                     <h3 class="package-title">Paket Enterprise</h3>
+                     <div class="price-section">
+                        <div class="old-price">Rp 75.000.000</div>
+                        <div class="new-price">Rp 62.500.000</div>
+                     </div>
+                     <ul class="package-features">
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Mesin Cuci 20kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Mesin Pengering 20kg</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 3 Setrika Uap Industrial</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gratis Semua Perlengkapan</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Garansi 3 Tahun</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Full Support + Konsultasi Bisnis</li>
+                     </ul>
+                     <button class="btn btn-package" onclick="openWhatsApp()">
+                        <i class="bi bi-whatsapp"></i> Konsultasikan Bisnis Laundry Anda
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== PRODUK SECTION ===== -->
+   <section id="produk" class="produk-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Peralatan & Perlengkapan Laundry</h2>
+            <p>Sediakan segala kebutuhan operasional laundry Anda dengan produk berkualitas tinggi, bergaransi, dan
+               tahan lama.</p>
+         </div>
+
+         <!-- Category Filter -->
+         <div class="product-filter d-flex justify-content-center flex-wrap gap-2 mb-5" data-aos="fade-up">
+            <button class="btn btn-filter active" data-filter="all">Semua Produk</button>
+            <button class="btn btn-filter" data-filter="mesin">Mesin Utama</button>
+            <button class="btn btn-filter" data-filter="pendukung">Peralatan Pendukung</button>
+            <button class="btn btn-filter" data-filter="chemical">Chemical & Sabun</button>
+         </div>
+
+         <!-- Note: On mobile we'll use Swiper for a cleaner look; the product grid becomes a carousel -->
+
+         <div class="product-swiper swiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+            <!-- Product 1: Washer -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="mesin" data-aos="fade-up">
+               <div class="new-product-card">
+                  <div class="product-badge">Best Seller</div>
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Mesin+Cuci+Industrial"
+                        alt="Mesin Cuci Industrial">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Mesin Cuci Industrial 15kg</h4>
+                     <p class="product-text">Mesin cuci heavy-duty dengan teknologi *Inverter Direct Drive* untuk
+                        efisiensi maksimal.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-cpu"></i> 10 Program Cuci</li>
+                        <li><i class="bi bi-lightning-charge"></i> Hemat Listrik 30%</li>
+                        <li><i class="bi bi-shield-check"></i> Garansi 2 Tahun</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Mulai Rp 12.xxx.xxx</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Detail & Pesan</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Product 2: Dryer -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="mesin" data-aos="fade-up" data-aos-delay="100">
+               <div class="new-product-card">
+                  <div class="product-badge bg-orange">Hot Item</div>
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Mesin+Pengering+Gas"
+                        alt="Mesin Pengering Gas">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Mesin Pengering Gas 10kg</h4>
+                     <p class="product-text">Pengering pakaian super cepat dengan sistem konversi gas yang sangat
+                        ekonomis.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-clock-history"></i> Kering 45 Menit</li>
+                        <li><i class="bi bi-droplet"></i> Heat Sensor</li>
+                        <li><i class="bi bi-award"></i> Anti Kusut</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Mulai Rp 8.xxx.xxx</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Detail & Pesan</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Product 3: Boiler -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="pendukung" data-aos="fade-up"
+               data-aos-delay="200">
+               <div class="new-product-card">
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Setrika+Uap+Boiler"
+                        alt="Setrika Uap Boiler">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Setrika Uap Boiler 15L</h4>
+                     <p class="product-text">Setrika uap kapasitas besar untuk hasil setrika licin sempurna seperti
+                        hotel bintang 5.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-fire"></i> Boiler Stainless Steel</li>
+                        <li><i class="bi bi-wind"></i> Tekanan Uap Tinggi</li>
+                        <li><i class="bi bi-check2-all"></i> Free 2 Kepala Setrika</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Mulai Rp 3.xxx.xxx</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Detail & Pesan</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Product 4: Chemical -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="chemical" data-aos="fade-up">
+               <div class="new-product-card">
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Deterjen+Cair+Matic"
+                        alt="Deterjen Cair Matic">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Deterjen Matic Premium</h4>
+                     <p class="product-text">Formula khusus untuk mesin laundry, ampuh mengangkat noda dan menjaga warna
+                        pakaian.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-box-seam"></i> Kemasan 5 Liter</li>
+                        <li><i class="bi bi-stars"></i> Rendah Busa</li>
+                        <li><i class="bi bi-flower1"></i> Ramah Lingkungan</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Rp 65.000 / 5L</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Beli Sekarang</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Product 5: Parfume -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="chemical" data-aos="fade-up"
+               data-aos-delay="100">
+               <div class="new-product-card">
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Parfume+Grade+A"
+                        alt="Parfume Laundry Grade A">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Parfum Laundry Grade A</h4>
+                     <p class="product-text">Aroma mewah yang tahan hingga 14 hari. Tersedia berbagai varian aroma
+                        favorit.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-clock"></i> Long Lasting Fragrance</li>
+                        <li><i class="bi bi-droplet-half"></i> Metanol High Grade</li>
+                        <li><i class="bi bi-tags"></i> 10+ Varian Aroma</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Rp 125.000 / 5L</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Beli Sekarang</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Product 6: Table -->
+            <div class="swiper-slide col-lg-4 col-md-6 product-item" data-category="pendukung" data-aos="fade-up"
+               data-aos-delay="200">
+               <div class="new-product-card">
+                  <div class="product-img-wrapper">
+                     <img src="https://placehold.co/600x450/0d6efd/ffffff?text=Meja+Setrika+Vacuum"
+                        alt="Meja Setrika Vacuum">
+                  </div>
+                  <div class="product-body">
+                     <h4 class="product-title">Meja Setrika Vacuum</h4>
+                     <p class="product-text">Dilengkapi motor hisap agar pakaian cepat kering dan uap tidak kembali ke
+                        arah setrika.</p>
+                     <ul class="product-specs">
+                        <li><i class="bi bi-fan"></i> Motor Silent Power</li>
+                        <li><i class="bi bi-arrows-fullscreen"></i> Ukuran Standard</li>
+                        <li><i class="bi bi-layers"></i> Cover Anti Panas</li>
+                     </ul>
+                     <div class="product-footer">
+                        <span class="product-price">Mulai Rp 2.xxx.xxx</span>
+                        <button class="btn btn-product-cta" onclick="openWhatsApp()">Detail & Pesan</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> <!-- .swiper-wrapper -->
+            <!-- Swiper Controls -->
+            <div class="swiper-button-prev product-swiper-prev"></div>
+            <div class="swiper-button-next product-swiper-next"></div>
+            <div class="swiper-pagination product-swiper-pagination"></div>
+         </div> <!-- .product-swiper -->
+      </div>
+   </section>
+
+   <!-- ===== BLOG/ARTIKEL SECTION ===== -->
+   <section id="blog" class="blog-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Blog & Tips Laundry</h2>
+            <p>Artikel dan tips terbaru seputar bisnis dan peralatan laundry</p>
+         </div>
+         <div class="swiper blogSwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+               <!-- Article 1 -->
+               <div class="swiper-slide">
+                  <article class="article-card">
+                     <div class="article-image">
+                        <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+1"
+                           alt="Tips Memulai Bisnis Laundry">
+                     </div>
+                     <div class="article-content">
+                        <div class="article-meta">
+                           <i class="bi bi-calendar3"></i>
+                           <span>15 Des 2025</span>
+                        </div>
+                        <h3 class="article-title">Tips Memulai Bisnis Laundry dari Nol</h3>
+                        <p class="article-excerpt">Panduan lengkap untuk memulai bisnis laundry yang menguntungkan
+                           dengan
+                           modal minim.</p>
+                        <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </article>
+               </div>
+
+               <!-- Article 2 -->
+               <div class="swiper-slide">
+                  <article class="article-card">
+                     <div class="article-image">
+                        <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+2"
+                           alt="Perawatan Mesin Laundry">
+                     </div>
+                     <div class="article-content">
+                        <div class="article-meta">
+                           <i class="bi bi-calendar3"></i>
+                           <span>10 Des 2025</span>
+                        </div>
+                        <h3 class="article-title">Cara Merawat Mesin Cuci Agar Awet</h3>
+                        <p class="article-excerpt">Tips perawatan mesin cuci industrial agar tetap optimal dan tahan
+                           lama.
+                        </p>
+                        <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </article>
+               </div>
+
+               <!-- Article 3 -->
+               <div class="swiper-slide">
+                  <article class="article-card">
+                     <div class="article-image">
+                        <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+3" alt="Marketing Laundry">
+                     </div>
+                     <div class="article-content">
+                        <div class="article-meta">
+                           <i class="bi bi-calendar3"></i>
+                           <span>5 Des 2025</span>
+                        </div>
+                        <h3 class="article-title">Strategi Marketing untuk Bisnis Laundry</h3>
+                        <p class="article-excerpt">Cara efektif memasarkan jasa laundry di era digital untuk menarik
+                           lebih
+                           banyak pelanggan.</p>
+                        <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </article>
+               </div>
+
+               <!-- Article 4 -->
+               <div class="swiper-slide">
+                  <article class="article-card">
+                     <div class="article-image">
+                        <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+4" alt="Peralatan Laundry">
+                     </div>
+                     <div class="article-content">
+                        <div class="article-meta">
+                           <i class="bi bi-calendar3"></i>
+                           <span>1 Des 2025</span>
+                        </div>
+                        <h3 class="article-title">Peralatan Wajib untuk Usaha Laundry</h3>
+                        <p class="article-excerpt">Daftar lengkap peralatan yang harus Anda miliki untuk memulai usaha
+                           laundry profesional.</p>
+                        <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+
+         <!-- View All Button -->
+         <div class="text-center mt-5" data-aos="fade-up">
+            <a href="#" class="btn btn-view-all">
+               View All Posts <i class="bi bi-arrow-right-circle"></i>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== TESTIMONI SECTION ===== -->
+   <section class="testimonial-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Testimoni Pelanggan</h2>
+            <p>Apa kata mereka yang telah mempercayakan bisnis laundry bersama kami</p>
+         </div>
+
+         <!-- Swiper Testimonial Slider -->
+         <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+               <!-- Testimonial 1 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Pelayanan sangat memuaskan! Mesin cuci yang saya beli awet
+                           dan berkualitas. Tim teknisi juga sangat membantu dalam proses instalasi. Highly
+                           recommended!"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img src="https://static.wikia.nocookie.net/akb48/images/1/10/Freya_Jayawardana_JKT48_2026.jpg"
+                           alt="Freya Jayawardana" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Freya Jayawardana</h5>
+                           <p>Pemilik LaundryKu - Jakarta</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Testimonial 2 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Harga kompetitif dengan kualitas terbaik. Sudah 2 tahun pakai
+                           peralatan dari LaundryPro dan masih awet. Support after sales-nya juga responsif
+                           banget!"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img
+                           src="https://static.wikia.nocookie.net/akb48/images/0/04/Gita_Sekar_Andarini_JKT48_2026.jpg"
+                           alt="Gita Sekar Andarini" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Gita Sekar Andarini</h5>
+                           <p>Owner Clean & Fresh - Bandung</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Testimonial 3 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Terima kasih LaundryPro! Berkat konsultasi dan paket
+                           usahanya, bisnis laundry saya berkembang pesat. Investasi yang sangat worth it!"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img src="https://static.wikia.nocookie.net/akb48/images/5/52/Aurellia_JKT48_2026.jpg"
+                           alt="Aurellia" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Aurellia</h5>
+                           <p>Founder WashExpress - Surabaya</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Testimonial 4 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Pengiriman cepat dan barang sampai dengan aman. Training
+                           penggunaannya sangat jelas, staf kami langsung paham cara pakai mesinnya."</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img src="https://static.wikia.nocookie.net/akb48/images/d/d6/Lulu_Salsabila_JKT48_2026.jpg"
+                           alt="Lulu Salsabila" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Lulu Salsabila</h5>
+                           <p>Manager Hotel Mawar - Bali</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Testimonial 5 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Sangat terbantu dengan paket usaha laundry koinnya. Sistemnya
+                           modern dan mudah dikontrol. Omzet naik terus tiap bulan."</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img src="https://static.wikia.nocookie.net/akb48/images/e/ec/Cornelia_Vanisa_JKT48_2026.jpg"
+                           alt="Cornelia Vanisa" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Cornelia Vanisa</h5>
+                           <p>Coin Laundry Express - Tuban</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Testimonial 6 -->
+               <div class="swiper-slide">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <div class="star-rating">
+                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"After sales service juara! Ada kendala teknis sedikit
+                           langsung ditangani teknisi hari itu juga. Bisnis jadi lancar tanpa hambatan."</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <img src="https://static.wikia.nocookie.net/akb48/images/6/68/Nina_Tutachia_JKT48_2026.jpg"
+                           alt="Nina Tutachia" class="testimonial-avatar">
+                        <div class="author-info">
+                           <h5>Nina Tutachia</h5>
+                           <p>Berkah Laundry - Semarang</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Swiper Navigation Buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== PARTNER SECTION ===== -->
+   <section class="partner-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Partner & Klien Kami</h2>
+            <p>Dipercaya oleh berbagai brand dan perusahaan laundry ternama</p>
+         </div>
+         <div class="partner-scroll-container">
+            <div class="partner-scroll-track">
+               <!-- First set of logos -->
+               <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/JKT48.svg" alt="Partner 1"
+                  class="partner-logo">
+               <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG3enOnndbRHcKdcXKT6UtH3guXjQggRByv2EKhaBSQ856Db8GwmpfMnr0oFO43fPUbemwKo_x4XkEzj0vZ2J3WIVWQ2yW1R_ypJN4SDk8CEY_b8yAeC6114ckaivI_r5CWajIWfzrfAPR1AEYrDcZZD_0yr2UNvY0BBzwlVw_IkuoPQktHUT38m-0/s320/GKL6_Slank%20-%20Koleksilogo.com.jpg2"
+                  alt="Partner 2" class="partner-logo">
+               <img src="https://upload.wikimedia.org/wikipedia/id/b/bd/Logo_Peterpan_band.png" alt="Partner 3"
+                  class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/id/thumb/a/a1/Persebaya_logo.svg/500px-Persebaya_logo.svg.png"
+                  alt="Partner 4" style="max-width: 60px;" class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo_of_the_Sharp_Corporation.svg/1920px-Logo_of_the_Sharp_Corporation.svg.png"
+                  alt="Partner 5" class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/LG_logo_%282014%29.svg/2560px-LG_logo_%282014%29.svg.png"
+                  alt="Partner 6" class="partner-logo">
+               <img src="https://www.tecnogas-indonesia.com/assets/imgs/azalea-logo.png" alt="Partner 7"
+                  class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lambang_Kabupaten_Tuban.webp/960px-Lambang_Kabupaten_Tuban.webp.png"
+                  alt="Partner 8" class="partner-logo">
+
+               <!-- Duplicate set for seamless loop -->
+               <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/JKT48.svg" alt="Partner 1"
+                  class="partner-logo">
+               <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG3enOnndbRHcKdcXKT6UtH3guXjQggRByv2EKhaBSQ856Db8GwmpfMnr0oFO43fPUbemwKo_x4XkEzj0vZ2J3WIVWQ2yW1R_ypJN4SDk8CEY_b8yAeC6114ckaivI_r5CWajIWfzrfAPR1AEYrDcZZD_0yr2UNvY0BBzwlVw_IkuoPQktHUT38m-0/s320/GKL6_Slank%20-%20Koleksilogo.com.jpg2"
+                  alt="Partner 2" class="partner-logo">
+               <img src="https://upload.wikimedia.org/wikipedia/id/b/bd/Logo_Peterpan_band.png" alt="Partner 3"
+                  class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/id/thumb/a/a1/Persebaya_logo.svg/500px-Persebaya_logo.svg.png"
+                  alt="Partner 4" class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo_of_the_Sharp_Corporation.svg/1920px-Logo_of_the_Sharp_Corporation.svg.png"
+                  alt="Partner 5" class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/LG_logo_%282014%29.svg/2560px-LG_logo_%282014%29.svg.png"
+                  alt="Partner 6" class="partner-logo">
+               <img src="https://www.tecnogas-indonesia.com/assets/imgs/azalea-logo.png" alt="Partner 7"
+                  class="partner-logo">
+               <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lambang_Kabupaten_Tuban.webp/960px-Lambang_Kabupaten_Tuban.webp.png"
+                  alt="Partner 8" class="partner-logo">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== CHANNEL HIGHLIGHTS SECTION ===== -->
+   <section class="channels-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Temukan Kami Di</h2>
+            <p>Belanja dan terhubung dengan kami melalui berbagai platform</p>
+         </div>
+         <!-- Combined Social Media & Marketplace -->
+         <div class="row justify-content-center">
+            <div class="col-12" data-aos="fade-up">
+               <div class="channel-grid">
+                  <!-- Social Media -->
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-instagram"></i>
+                     <span>Instagram</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-facebook"></i>
+                     <span>Facebook</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-tiktok"></i>
+                     <span>TikTok</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-youtube"></i>
+                     <span>YouTube</span>
+                  </a>
+                  <!-- Marketplace -->
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-shop"></i>
+                     <span>Tokopedia</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-bag-fill"></i>
+                     <span>Shopee</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-cart-fill"></i>
+                     <span>Bukalapak</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-basket-fill"></i>
+                     <span>Lazada</span>
+                  </a>
+                  <a href="#" class="channel-item">
+                     <i class="bi bi-globe"></i>
+                     <span>Website</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== FAQ SECTION ===== -->
+   <section class="faq-section">
+      <div class="container">
+         <div class="section-title" data-aos="fade-up">
+            <h2>Pertanyaan Umum</h2>
+            <p>Jawaban atas pertanyaan yang sering diajukan oleh mitra kami</p>
+         </div>
+
+         <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+               <div class="accordion" id="faqAccordion">
+                  <!-- FAQ 1 -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Apakah tersedia layanan purna jual / garansi?
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Ya, semua mesin yang kami jual bergaransi resmi distributor selama 1-5 tahun tergantung merk.
+                           Kami juga menyediakan layanan teknisi panggilan dan ketersediaan sparepart terjamin.
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- FAQ 2 -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Apakah bisa kirim ke luar kota/pulau?
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Tentu saja. Kami melayani pengiriman ke seluruh Indonesia menggunakan ekspedisi rekanan yang
+                           terpercaya dan berasuransi, sehingga barang aman sampai tujuan.
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- FAQ 3 -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Apa saja yang didapat dalam paket usaha?
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Paket usaha kami sudah lengkap "Tinggal Buka", meliputi: Mesin Washer & Dryer, Setrika Uap,
+                           Meja Setrika, Timbangan, Rak, Deterjen, Parfum, hingga Training Operasional.
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- FAQ 4 -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           Apakah ada training cara penggunaan mesin?
+                        </button>
+                     </h2>
+                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Ya, kami memberikan fasilitas FREE Training cara penggunaan dan perawatan mesin, serta
+                           konsultasi standar operasional prosedur (SOP) laundry untuk setiap pembelian paket usaha.
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- FAQ 5 -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                           Bagaimana cara pemesanannya?
+                        </button>
+                     </h2>
+                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Anda bisa berkonsultasi terlebih dahulu dengan tim marketing kami melalui WhatsApp. Setelah
+                           deal, kami akan siapkan invoice dan jadwal pengiriman. Pembayaran aman dan transparan.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== FOOTER ===== -->
+   <footer id="kontak" class="footer">
+      <div class="container">
+         <div class="row g-4">
+            <!-- Kolom 1: About -->
+            <div class="col-lg-6 col-md-6">
+               <h5><i class="bi bi-water"></i> LaundryPro</h5>
+               <p>Pusat grosir peralatan laundry terlengkap dan terpercaya di Indonesia. Kami menyediakan solusi lengkap
+                  untuk kesuksesan bisnis laundry Anda dengan harga terbaik dan layanan purna jual yang memuaskan.</p>
+               <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+               </div>
+            </div>
+
+            <!-- Kolom 2: Quick Links -->
+            <div class="col-lg-2 col-md-6">
+               <h5>Quick Links</h5>
+               <ul class="footer-links">
+                  <li><a href="#beranda">Beranda</a></li>
+                  <li><a href="#tentang">Tentang Kami</a></li>
+                  <li><a href="#paket">Paket Usaha</a></li>
+                  <li><a href="#produk">Produk</a></li>
+                  <li><a href="#promo">Promo</a></li>
+                  <li><a href="#blog">Blog & Tips</a></li>
+               </ul>
+            </div>
+
+            <!-- Kolom 3: Kontak -->
+            <div class="col-lg-4 col-md-6">
+               <h5>Hubungi Kami</h5>
+               <ul class="footer-links">
+                  <li><i class="bi bi-geo-alt-fill"></i> Jl. Raya Laundry No. 123, Jakarta</li>
+                  <li><i class="bi bi-telephone-fill"></i> +62 812-3456-7890</li>
+                  <li><i class="bi bi-envelope-fill"></i> info@laundrypro.com</li>
+                  <li><i class="bi bi-clock-fill"></i> Senin - Sabtu: 08:00 - 17:00</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="footer-bottom">
+            <p>&copy; 2026 LaundryPro. All Rights Reserved. | Develope by <a style="color: orange; font-weight: bold;" target="_blank" href="https://www.linkedin.com/in/agusprasetyo30/">Agus Prasetyo</a> </p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Back to Top Button -->
+   <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up"></i>
+   </button>
+
+   <!-- Bootstrap 5 JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- AOS Animation JS -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Custom JavaScript -->
+   <script src="{{ asset('js/landing-page/main.js') }}"></script>
+</body>
+
+</html>

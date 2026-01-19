@@ -1,0 +1,79 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Helpers\LogConfig;
+use App\Helpers\SwitchDatabase;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Invoice\InvoiceDetailsRequest;
+use App\Http\Requests\Invoice\InvoiceListRequest;
+use App\Services\Api\InvoiceApiService;
+use Carbon\Carbon;
+
+class InvoiceController extends Controller
+{
+    /**
+     * Summary of getInvoiceList
+     * @param InvoiceListRequest $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function getInvoiceList(InvoiceListRequest $request)
+    {
+        try {
+            $kodeCabangDivisi = $request->distributor_code . "/" . config('microservice.kode_signify');
+            SwitchDatabase::getERPConnection(config('microservice.company_id'),$kodeCabangDivisi);
+
+            // data yang akan dikirimkan ke microservice
+            $arr_data = [
+                "company_id" => config('microservice.company_id'),
+                "cabang"  => $kodeCabangDivisi, // kode_cabang/kode_divisi
+                "partner_code" => "SIGNIFY",
+                "start_date"  => $request->start_date,
+                "end_date"  => $request->end_date,
+            ];
+
+            // cek input last_request_at
+            if (isset($request->last_request_at)) {
+                $arr_data = array_merge($arr_data, ["last_request_at" => Carbon::createFromTimestamp($request->last_request_at, 'Asia/Jakarta')->toDateTimeString()]);
+            }
+
+            // memanggil service invoice
+            $invoiceService = new InvoiceApiService();
+            
+            // mengirimkan data ke microservice & menampilkan output sesuai format
+            return $invoiceService->sendApiGetListInvoice($arr_data);
+        } catch (\Throwable $th) {
+            return LogConfig::errorMessageWithID($th);
+        }
+    }
+
+    /**
+     * Summary of getInvoiceDetails
+     * @param InvoiceDetailsRequest $request
+     * @return \Illuminate\Http\JsonResponse|\Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function getInvoiceDetails(InvoiceDetailsRequest $request)
+    {
+        try {
+            $kodeCabangDivisi = $request->distributor_code . "/" . config('microservice.kode_signify');
+            SwitchDatabase::getERPConnection(config('microservice.company_id'),$kodeCabangDivisi);
+            
+            $arr_body = [
+                "company_id" => config('microservice.company_id'),
+                "cabang"  => $kodeCabangDivisi, // kode_cabang/kode_divisi
+                "partner_code" => "SIGNIFY",
+                "kodenota" => $request->invoice_no
+            ];
+        
+             // memanggil service invoice
+            $invoiceService = new InvoiceApiService();
+            
+            // mengirimkan data ke microservice & menampilkan output sesuai format
+            return $invoiceService->sendApiGetInvoiceDetails($arr_body);
+        } catch (\Throwable $th) {
+            return LogConfig::errorMessageWithID($th);
+        }
+    }
+
+    
+}
