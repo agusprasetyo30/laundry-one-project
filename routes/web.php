@@ -34,8 +34,7 @@ Route::get('/template/datatable', function () {
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [\App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 
-// Contact Route
-Route::get('/contact', function () {
+// Hubungi Kami Route
+Route::get('/hubungi-kami', function () {
     return view('landing-page.contact');
-})->name('contact');
-
+})->name('hubungi-kami');

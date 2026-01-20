@@ -227,12 +227,12 @@ if (statsSection) {
 
 // Countdown Timer (dummy)
 function startCountdown() {
-   let days = 5;
-   let hours = 12;
-   let minutes = 34;
-   let seconds = 56;
+   let days = 0;
+   let hours = 1;
+   let minutes = 0;
+   let seconds = 5;
 
-   setInterval(() => {
+   const timerInterval = setInterval(() => {
       seconds--;
       if (seconds < 0) {
          seconds = 59;
@@ -246,22 +246,32 @@ function startCountdown() {
          hours = 23;
          days--;
       }
+
       if (days < 0) {
-         days = 5;
-         hours = 12;
-         minutes = 34;
-         seconds = 56;
+         clearInterval(timerInterval);
+
+         // Ganti teks timer
+         document.querySelector('.timer-display').textContent = 'PROMO TELAH BERAKHIR';
+
+         // Hapus teks "Promo Berakhir Dalam:"
+         const label = document.querySelector('.card-body p');
+         if (label) label.remove();
+
+         // Ganti background card
+         const card = document.querySelector('.card');
+         card.style.background = '#7f1d1d';
+
+         return;
       }
 
       // Update all timers
-      for (let i = 1; i <= 3; i++) {
-         document.getElementById('days' + i).textContent = String(days).padStart(2, '0');
-         document.getElementById('hours' + i).textContent = String(hours).padStart(2, '0');
-         document.getElementById('mins' + i).textContent = String(minutes).padStart(2, '0');
-         document.getElementById('secs' + i).textContent = String(seconds).padStart(2, '0');
-      }
+      document.getElementById('days-promo').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours-promo').textContent = String(hours).padStart(2, '0');
+      document.getElementById('mins-promo').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('secs-promo').textContent = String(seconds).padStart(2, '0');
    }, 1000);
 }
+
 startCountdown();
 
 // WhatsApp Function

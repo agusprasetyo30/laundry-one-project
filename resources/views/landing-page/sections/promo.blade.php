@@ -102,9 +102,13 @@
 
    </div>
    <div class="countdown-timer">
-      <p>Promo Berakhir Dalam:</p>
-      <div class="timer-display">
-         <span id="days1">05</span>:<span id="hours1">12</span>:<span id="mins1">34</span>:<span id="secs1">56</span>
+      <div class="card" style="background: #7b4900">
+         <div class="card-body">
+            <p>Promo Berakhir Dalam:</p>
+            <div class="timer-display">
+               <span id="days-promo" data-days="0">05</span>:<span id="hours-promo" data-hours="1">01</span>:<span id="mins-promo" data-mins="1">01</span>:<span id="secs-promo" data-secs="0">05</span>
+            </div>
+         </div>
       </div>
    </div>
 </section>

@@ -25,7 +25,7 @@
                <li><a href="{{ route('index') }}#produk">Produk</a></li>
                <li><a href="{{ route('index') }}#promo">Promo</a></li>
                <li><a href="{{ route('blog.index') }}">Blog & Tips</a></li>
-               <li><a href="{{ route('contact') }}">Hubungi Kami</a></li>
+               <li><a href="{{ route('hubungi-kami') }}">Hubungi Kami</a></li>
             </ul>
          </div>
 

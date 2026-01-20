@@ -1,16 +1,16 @@
 <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-        <a href="{{ route('dashboard') }}">
+        <a href="{{ route('index') }}">
             <img src="{{ asset('assets/img/logo-bcp-reckitt.png') }}" height="32" alt="">
         </a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-        <a href="{{ route('dashboard') }}">BR</a>
+        <a href="{{ route('index') }}">BR</a>
     </div>
     <ul class="sidebar-menu">
 
         <li class="menu-header">Dashboard</li>
-        <li class="{{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard') }}"><i class="fas fa-home"></i> <span>Beranda</span></a></li>
+        <li class="{{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ route('index') }}"><i class="fas fa-home"></i> <span>Beranda</span></a></li>
 
         <li class="menu-header">Feature</li>
         {{-- <li class="dropdown active"> --}}

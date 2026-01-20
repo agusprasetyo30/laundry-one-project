@@ -17,7 +17,7 @@
                $isActiveBlogContact = true;
             }
 
-            if (request()->is('contact')) {
+            if (request()->is('hubungi-kami')) {
                $isActiveContact = true;
             }
          @endphp
@@ -39,7 +39,7 @@
             </li>
 
             <li class="nav-item">
-               <a class="nav-link {{ $isActiveContact ? 'active' : '' }}" href="{{ route('contact') }}">Hubungi Kami</a>
+               <a class="nav-link {{ $isActiveContact ? 'active' : '' }}" href="{{ route('hubungi-kami') }}">Hubungi Kami</a>
             </li>
             <li class="nav-item">
                <button class="btn btn-cta-nav" onclick="openWhatsApp()" aria-label="Konsultasi via WhatsApp">

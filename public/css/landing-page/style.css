@@ -821,7 +821,7 @@ section#promo {
 }
 
 .countdown-timer {
-    background: #fff3cd;
+    background: var(--accent-orange);
     padding: 1rem;
     border-radius: 10px;
     margin: 3.5rem 0 0;
@@ -831,13 +831,13 @@ section#promo {
 .countdown-timer p {
     margin: 0;
     font-weight: 600;
-    color: #856404;
+    color: var(--white);
 }
 
 .timer-display {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: var(--accent-orange);
+    color: var(--white);
     margin-top: 0.5rem;
 }
 
@@ -1984,14 +1984,16 @@ section#promo {
 .contact-section {
     background: #f8f9fa;
 }
+
 /* Unified Contact Card Styles */
 .contact-unified-card {
     background: #fff;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* More subtle, deeper shadow */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    /* More subtle, deeper shadow */
     height: 100%;
-    border: 1px solid rgba(0,0,0,0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .contact-item-row {
