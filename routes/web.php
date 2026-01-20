@@ -26,10 +26,16 @@ Route::get('/test', function (Request $request) {
     //     ) AS Result"), ['']);
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/template/datatable', function () {
     return view('datatables');
 })->name('template.datatable');
+
+// Blog Routes
+Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [\App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+
+// Contact Route
+Route::get('/contact', function () {
+    return view('landing-page.contact');
+})->name('contact');
+

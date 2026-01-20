@@ -219,7 +219,11 @@ const observer = new IntersectionObserver((entries) => {
       }
    });
 });
-observer.observe(statsSection);
+
+if (statsSection) {
+   observer.observe(statsSection);
+}
+
 
 // Countdown Timer (dummy)
 function startCountdown() {
@@ -273,17 +277,52 @@ function scrollToSection(sectionId) {
    section.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Smooth scroll for nav links
+
+// Smooth scroll for nav links and Active State
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const targetId = this.getAttribute('href');
+
+      // If href is just "#", do nothing
+      if (targetId === '#') return;
+
+      const target = document.querySelector(targetId);
       if (target) {
+         // Update active state immediately on click
+         document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.classList.remove('active');
+         });
+         this.classList.add('active');
+
          target.scrollIntoView({
             behavior: 'smooth', block: 'start'
-         })
+         });
       }
    });
+});
+
+// Scrollspy to update active state on scroll
+window.addEventListener('scroll', () => {
+   let current = '';
+   const sections = document.querySelectorAll('section');
+
+   sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= (sectionTop - 150)) { // Offset for navbar height
+         current = section.getAttribute('id');
+      }
+   });
+
+   if (current) {
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+         link.classList.remove('active');
+         if (link.getAttribute('href').includes('#' + current)) {
+            link.classList.add('active');
+         }
+      });
+   }
 });
 
 // Back to Top Button

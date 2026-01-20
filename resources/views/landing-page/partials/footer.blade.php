@@ -19,12 +19,13 @@
          <div class="col-lg-2 col-md-6">
             <h5>Quick Links</h5>
             <ul class="footer-links">
-               <li><a href="#beranda">Beranda</a></li>
-               <li><a href="#tentang">Tentang Kami</a></li>
-               <li><a href="#paket">Paket Usaha</a></li>
-               <li><a href="#produk">Produk</a></li>
-               <li><a href="#promo">Promo</a></li>
-               <li><a href="#blog">Blog & Tips</a></li>
+               <li><a href="{{ route('index') }}#beranda">Beranda</a></li>
+               <li><a href="{{ route('index') }}#tentang">Tentang Kami</a></li>
+               <li><a href="{{ route('index') }}#paket">Paket Usaha</a></li>
+               <li><a href="{{ route('index') }}#produk">Produk</a></li>
+               <li><a href="{{ route('index') }}#promo">Promo</a></li>
+               <li><a href="{{ route('blog.index') }}">Blog & Tips</a></li>
+               <li><a href="{{ route('contact') }}">Hubungi Kami</a></li>
             </ul>
          </div>
 

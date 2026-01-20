@@ -7,11 +7,12 @@
       </div>
       <div class="swiper blogSwiper" data-aos="fade-up">
          <div class="swiper-wrapper">
+
             <!-- Article 1 -->
             <div class="swiper-slide">
                <article class="article-card">
                   <div class="article-image">
-                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+1"
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Bisnis+Laundry"
                         alt="Tips Memulai Bisnis Laundry">
                   </div>
                   <div class="article-content">
@@ -23,7 +24,7 @@
                      <p class="article-excerpt">Panduan lengkap untuk memulai bisnis laundry yang menguntungkan
                         dengan
                         modal minim.</p>
-                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     <a href="{{ route('blog.show', 'tips-memulai-bisnis-laundry-dari-nol') }}" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                </article>
             </div>
@@ -32,7 +33,7 @@
             <div class="swiper-slide">
                <article class="article-card">
                   <div class="article-image">
-                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+2"
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Mesin+Cuci"
                         alt="Perawatan Mesin Laundry">
                   </div>
                   <div class="article-content">
@@ -44,7 +45,7 @@
                      <p class="article-excerpt">Tips perawatan mesin cuci industrial agar tetap optimal dan tahan
                         lama.
                      </p>
-                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     <a href="{{ route('blog.show', 'cara-merawat-mesin-cuci-agar-awet') }}" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                </article>
             </div>
@@ -53,7 +54,7 @@
             <div class="swiper-slide">
                <article class="article-card">
                   <div class="article-image">
-                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+3" alt="Marketing Laundry">
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Marketing" alt="Marketing Laundry">
                   </div>
                   <div class="article-content">
                      <div class="article-meta">
@@ -64,7 +65,7 @@
                      <p class="article-excerpt">Cara efektif memasarkan jasa laundry di era digital untuk menarik
                         lebih
                         banyak pelanggan.</p>
-                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     <a href="{{ route('blog.show', 'strategi-marketing-untuk-bisnis-laundry') }}" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                </article>
             </div>
@@ -73,7 +74,7 @@
             <div class="swiper-slide">
                <article class="article-card">
                   <div class="article-image">
-                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Gambar+4" alt="Peralatan Laundry">
+                     <img src="https://placehold.co/400x250/0d6efd/ffffff?text=Peralatan" alt="Peralatan Laundry">
                   </div>
                   <div class="article-content">
                      <div class="article-meta">
@@ -83,23 +84,16 @@
                      <h3 class="article-title">Peralatan Wajib untuk Usaha Laundry</h3>
                      <p class="article-excerpt">Daftar lengkap peralatan yang harus Anda miliki untuk memulai usaha
                         laundry profesional.</p>
-                     <a href="#" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                     <a href="{{ route('blog.show', 'peralatan-wajib-untuk-usaha-laundry') }}" class="btn-read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
                   </div>
                </article>
             </div>
          </div>
-
-         <!-- Swiper Navigation -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-
-         <!-- Swiper Pagination -->
-         <div class="swiper-pagination"></div>
       </div>
 
       <!-- View All Button -->
       <div class="text-center mt-5" data-aos="fade-up">
-         <a href="#" class="btn btn-view-all">
+         <a href="{{ route('blog.index') }}" class="btn btn-view-all">
             View All Posts <i class="bi bi-arrow-right-circle"></i>
          </a>
       </div>
