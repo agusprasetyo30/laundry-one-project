@@ -106,7 +106,10 @@
          <div class="card-body">
             <p>Promo Berakhir Dalam:</p>
             <div class="timer-display">
-               <span id="days-promo" data-days="0">05</span>:<span id="hours-promo" data-hours="1">01</span>:<span id="mins-promo" data-mins="1">01</span>:<span id="secs-promo" data-secs="0">05</span>
+               <span id="days-promo" data-days="{{ $expirePromo['days'] }}">{{ str_pad($expirePromo['days'], 2, '0', STR_PAD_LEFT) }}</span>:
+               <span id="hours-promo" data-hours="{{ $expirePromo['hours'] }}">{{ str_pad($expirePromo['hours'], 2, '0', STR_PAD_LEFT) }}</span>:
+               <span id="mins-promo" data-mins="{{ $expirePromo['minutes'] }}">{{ str_pad($expirePromo['minutes'], 2, '0', STR_PAD_LEFT) }}</span>:
+               <span id="secs-promo" data-secs="{{ $expirePromo['seconds'] }}">{{ str_pad($expirePromo['seconds'], 2, '0', STR_PAD_LEFT) }}</span>
             </div>
          </div>
       </div>
