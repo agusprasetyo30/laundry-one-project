@@ -227,10 +227,10 @@ if (statsSection) {
 
 // Countdown Timer (dummy)
 function startCountdown() {
-   let days = 0;
-   let hours = 1;
-   let minutes = 0;
-   let seconds = 5;
+   let days = $('#days-promo').data('days') || 0;
+   let hours = $('#hours-promo').data('hours') || 0;
+   let minutes = $('#mins-promo').data('mins') || 0;
+   let seconds = $('#secs-promo').data('secs') || 0;
 
    const timerInterval = setInterval(() => {
       seconds--;

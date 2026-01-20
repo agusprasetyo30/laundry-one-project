@@ -1,26 +1,41 @@
 <?php
 
+use App\Http\Controllers\LandingPageController;
+use App\Models\AdditionalLogic;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', [LandingPageController::class, 'index'])
+    ->name('index');
 
 Route::get('/test', function (Request $request) {
-    $repo = new \App\Repositories\JabatanRepository;
-    $service = new \App\Services\JabatanService;
+    $cek = AdditionalLogic::where('module_name', 'promo')
+        ->where('param_name', 'expired_promo_date')
+        ->first();
 
-    $pagination = $service->getPaginationParams($request);
-    $filters = $service->getFiltersParams($request);
-    // $data = $repo->getData($pagination['params'], $pagination['whereSearch']);
-    // $data = $repo->getData([1, 10], 'nama');
-    DB::enableQueryLog();
-    $params = array_merge($filters['params'], [$pagination['startRow'], $pagination['endRow']]);
+    $expirePromo = [
+        'days' => (int)Carbon::now()->diffInDays($cek->attr1_val),
+        'hours' => (int)Carbon::now()->diffInHours($cek->attr1_val) % 24,
+        'minutes' => Carbon::parse(Carbon::now())->diffInMinutes($cek->attr1_val) % 60,
+        'seconds' => Carbon::parse(Carbon::now())->diffInSeconds($cek->attr1_val) % 60,
+    ];
 
-    $data = $repo->getData($params, $filters['whereSearch']);
-    \Log::info(DB::getQueryLog());
-    dd('cekData', [$pagination, $filters, $data]);
+        dd($cek, $expirePromo);
+
+    // $repo = new \App\Repositories\JabatanRepository;
+    // $service = new \App\Services\JabatanService;
+
+    // $pagination = $service->getPaginationParams($request);
+    // $filters = $service->getFiltersParams($request);
+    // // $data = $repo->getData($pagination['params'], $pagination['whereSearch']);
+    // // $data = $repo->getData([1, 10], 'nama');
+    // DB::enableQueryLog();
+    // $params = array_merge($filters['params'], [$pagination['startRow'], $pagination['endRow']]);
+
+    // $data = $repo->getData($params, $filters['whereSearch']);
+    // \Log::info(DB::getQueryLog());
+    // dd('cekData', [$pagination, $filters, $data]);
     // dd(DB::select("SELECT * FROM (
     //     SELECT ROW_NUMBER() OVER (order by nama ASC) AS RowNum, j.Nama as nama, j.Status, j.CreateDate as create_date FROM Jabatan j
     //     ) AS Result"), ['']);
