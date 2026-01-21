@@ -635,7 +635,7 @@ section#promo {
 
 /* ===== PAKET USAHA SECTION ===== */
 .paket-section {
-    padding: 5rem 0 0;
+    padding: 5rem 0 2rem;
     background: var(--light-grey);
 }
 
@@ -878,8 +878,8 @@ section#promo {
 
 /* ===== PRODUK SECTION REDESIGN ===== */
 .produk-section {
-    padding: 5rem 0;
-    background: var(--light-grey);
+    padding: 5rem 0 2rem;
+    background: var(--white);
 }
 
 .product-filter .btn-filter {
@@ -1058,7 +1058,7 @@ section#promo {
 
 /* ===== BLOG SECTION ===== */
 .blog-section {
-    padding: 5rem 0;
+    padding: 5rem 0 4rem;
     background: var(--light-grey);
 }
 
@@ -1148,7 +1148,7 @@ section#promo {
 
 /* Blog Swiper Customization */
 .blogSwiper {
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     margin: 0 -1rem;
 }
 
@@ -1213,7 +1213,7 @@ section#promo {
 
 /* ===== TESTIMONIAL SECTION ===== */
 .testimonial-section {
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
     background: var(--white);
     overflow: hidden;
 }

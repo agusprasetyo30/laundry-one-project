@@ -9,19 +9,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingPageController::class, 'index'])
     ->name('index');
 
-Route::get('/test', function (Request $request) {
-    $cek = AdditionalLogic::where('module_name', 'promo')
-        ->where('param_name', 'expired_promo_date')
-        ->first();
-
-    $expirePromo = [
-        'days' => (int)Carbon::now()->diffInDays($cek->attr1_val),
-        'hours' => (int)Carbon::now()->diffInHours($cek->attr1_val) % 24,
-        'minutes' => Carbon::parse(Carbon::now())->diffInMinutes($cek->attr1_val) % 60,
-        'seconds' => Carbon::parse(Carbon::now())->diffInSeconds($cek->attr1_val) % 60,
-    ];
-
-        dd($cek, $expirePromo);
+Route::get('/test', function (Request $request, \App\Services\PromoService $promoService) {
+    $expirePromo = $promoService->getPromoExpiration();
+    dd($expirePromo);
 
     // $repo = new \App\Repositories\JabatanRepository;
     // $service = new \App\Services\JabatanService;

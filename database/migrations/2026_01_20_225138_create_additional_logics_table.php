@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('param_name', 100);
             $table->string('attr1_val')->nullable();
             $table->string('attr2_val')->nullable();
-            $table->string('att3_val')->nullable();
+            $table->string('attr3_val')->nullable();
             $table->timestamps();
 
             $table->unique(['module_name', 'param_name'], 'unique_module_param');

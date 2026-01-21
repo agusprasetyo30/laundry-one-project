@@ -17,7 +17,7 @@ class AdditionalLogicSeeder extends Seeder
             'param_name' => 'expired_promo_date',
             'attr1_val' => '2026-01-31 10:00:00',
             'attr2_val' => null,
-            'att3_val' => null,
+            'attr3_val' => null,
         ]);
 
         $this->command->info('AdditionalLogicSeeder: Seeded additional logic data successfully.');
