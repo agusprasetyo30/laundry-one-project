@@ -13,6 +13,6 @@ class AdditionalLogic extends Model
         'param_name',
         'attr1_val',
         'attr2_val',
-        'att3_val',
+        'attr3_val',
     ];
 }

@@ -92,7 +92,7 @@
       </div>
 
       <!-- View All Button -->
-      <div class="text-center mt-5" data-aos="fade-up">
+      <div class="text-center mt-3" data-aos="fade-up">
          <a href="{{ route('blog.index') }}" class="btn btn-view-all">
             View All Posts <i class="bi bi-arrow-right-circle"></i>
          </a>
