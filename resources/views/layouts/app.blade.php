@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="{{ asset('assets/img/borwitareckitt.png') }}" sizes="32x32">
-    <link rel="icon" href="{{ asset('assets/img/borwitareckitt.png') }}" sizes="192x192">
+    <link rel="icon" href="{{ asset('img/logo-one-grosir-32x32.webp') }}" sizes="32x32">
+    <link rel="icon" href="{{ asset('img/logo-one-grosir-192x192.webp') }}" sizes="192x192">
     
-    <title>{{ $title }} | Borwita x Reckitt Integration</title>
+    <title>{{ $title }} | One Grosir Laundry</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- General CSS Files -->

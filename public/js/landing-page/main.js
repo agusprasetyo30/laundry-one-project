@@ -227,6 +227,9 @@ if (statsSection) {
 
 // Countdown Timer (dummy)
 function startCountdown() {
+   const daysElement = document.getElementById('days-promo');
+   if (!daysElement) return;
+
    let days = $('#days-promo').data('days') || 0;
    let hours = $('#hours-promo').data('hours') || 0;
    let minutes = $('#mins-promo').data('mins') || 0;

@@ -1,8 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\LandingPageController;
-use App\Models\AdditionalLogic;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +42,18 @@ Route::get('/blog/{slug}', [\App\Http\Controllers\BlogController::class, 'show']
 Route::get('/hubungi-kami', function () {
     return view('landing-page.contact');
 })->name('hubungi-kami');
+
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::prefix('/admin')->as('admin.')->namespace('Admin')->group(function () {
+    Route::get('/', function () {
+        return view('datatables');
+    })->name('index');
+
+    Route::get('/pengguna', [UserController::class, 'index'])->name('user.index');
+    // Route::get('/login', function () {
+    //     return view('admin.login');
+    // })->name('admin.login');
+});
